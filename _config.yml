@@ -11,3 +11,6 @@ github_username:  geekysuavo
 markdown: kramdown
 highlighter: rouge
 
+# excluded files
+exclude: [README.md, Makefile]
+
