@@ -1,0 +1,13 @@
+# _config.yml
+
+# site settings
+title: geekysuavo.github.io
+email: geekysuavo@gmail.com
+baseurl: ""
+url: "http://geekysuavo.github.io"
+github_username:  geekysuavo
+
+# build settings
+markdown: kramdown
+highlighter: rouge
+

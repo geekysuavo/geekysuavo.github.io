@@ -1,0 +1,398 @@
+@font-face {
+  font-family: 'gsSansSerifRegular';
+  src: url('/res/fonts/gsSansSerifRegular.eot');
+  src: url('/res/fonts/gsSansSerifRegular.eot?#iefix') format('embedded-opentype'),
+       url('/res/fonts/gsSansSerifRegular.woff') format('woff'),
+       url('/res/fonts/gsSansSerifRegular.ttf') format('truetype'),
+       url('/res/fonts/gsSansSerifRegular.svg#ChivoRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gsSansSerifBlack';
+  src: url('/res/fonts/gsSansSerifBlack.eot');
+  src: url('/res/fonts/gsSansSerifBlack.eot?#iefix') format('embedded-opentype'),
+       url('/res/fonts/gsSansSerifBlack.woff') format('woff'),
+       url('/res/fonts/gsSansSerifBlack.ttf') format('truetype'),
+       url('/res/fonts/gsSansSerifBlack.svg#ChivoBlack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gsSansSerifItalic';
+  src: url('/res/fonts/gsSansSerifItalic.eot');
+  src: url('/res/fonts/gsSansSerifItalic.eot?#iefix') format('embedded-opentype'),
+       url('/res/fonts/gsSansSerifItalic.woff') format('woff'),
+       url('/res/fonts/gsSansSerifItalic.ttf') format('truetype'),
+       url('/res/fonts/gsSansSerifItalic.svg#ChivoItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gsSansSerifBlackItalic';
+  src: url('/res/fonts/gsSansSerifBlackItalic.eot');
+  src: url('/res/fonts/gsSansSerifBlackItalic.eot?#iefix') format('embedded-opentype'),
+       url('/res/fonts/gsSansSerifBlackItalic.woff') format('woff'),
+       url('/res/fonts/gsSansSerifBlackItalic.ttf') format('truetype'),
+       url('/res/fonts/gsSansSerifBlackItalic.svg#ChivoBlack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gsSerifRegular';
+  src: url('/res/fonts/gsSerifRegular.eot');
+  src: url('/res/fonts/gsSerifRegular.eot?#iefix') format('embedded-opentype'),
+       url('/res/fonts/gsSerifRegular.woff') format('woff'),
+       url('/res/fonts/gsSerifRegular.ttf') format('truetype'),
+       url('/res/fonts/gsSerifRegular.svg#ContraRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gsSerifItalic';
+  src: url('/res/fonts/gsSerifItalic.eot');
+  src: url('/res/fonts/gsSerifItalic.eot?#iefix') format('embedded-opentype'),
+       url('/res/fonts/gsSerifItalic.woff') format('woff'),
+       url('/res/fonts/gsSerifItalic.ttf') format('truetype'),
+       url('/res/fonts/gsSerifItalic.svg#ContraRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gsMonospaceRegular';
+  src: url('/res/fonts/gsMonospaceRegular.eot');
+  src: url('/res/fonts/gsMonospaceRegular.eot?#iefix') format('embedded-opentype'),
+       url('/res/fonts/gsMonospaceRegular.woff') format('woff'),
+       url('/res/fonts/gsMonospaceRegular.ttf') format('truetype'),
+       url('/res/fonts/gsMonospaceRegular.svg#CousineRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gsMonospaceBlack';
+  src: url('/res/fonts/gsMonospaceBlack.eot');
+  src: url('/res/fonts/gsMonospaceBlack.eot?#iefix') format('embedded-opentype'),
+       url('/res/fonts/gsMonospaceBlack.woff') format('woff'),
+       url('/res/fonts/gsMonospaceBlack.ttf') format('truetype'),
+       url('/res/fonts/gsMonospaceBlack.svg#CousineBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gsMonospaceItalic';
+  src: url('/res/fonts/gsMonospaceItalic.eot');
+  src: url('/res/fonts/gsMonospaceItalic.eot?#iefix') format('embedded-opentype'),
+       url('/res/fonts/gsMonospaceItalic.woff') format('woff'),
+       url('/res/fonts/gsMonospaceItalic.ttf') format('truetype'),
+       url('/res/fonts/gsMonospaceItalic.svg#CousineItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gsMonospaceBlackItalic';
+  src: url('/res/fonts/gsMonospaceBlackItalic.eot');
+  src: url('/res/fonts/gsMonospaceBlackItalic.eot?#iefix') format('embedded-opentype'),
+       url('/res/fonts/gsMonospaceBlackItalic.woff') format('woff'),
+       url('/res/fonts/gsMonospaceBlackItalic.ttf') format('truetype'),
+       url('/res/fonts/gsMonospaceBlackItalic.svg#CousineBoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(220,220,220);
+  margin: 0px 0px 0px 0px;
+  font-family: gsSerifRegular;
+  font-size: 14px;
+}
+
+div.bar {
+  background-color: rgb(255,255,255);
+  border-width: 1.5px 1.5px 1.5px 1.5px;
+  border-color: rgb(200,200,200);
+  border-style: solid;
+  position: absolute;
+  width: 880px;
+  left: 50%;
+  margin-left: -440px;
+}
+
+div.bar.top {
+  border-top-width: 0px;
+  height: 96px;
+  top: 0px;
+}
+
+div.bar.center {
+  height: 96px;
+  top: 50%;
+  margin-top: -48px;
+}
+
+div.bar.middle {
+  padding-bottom: 53px;
+  top: 101px;
+}
+
+div.bar.bottom {
+  border-bottom-width: 0px;
+  position: fixed;
+  height: 48px;
+  bottom: 0px;
+}
+
+div.bar.side {
+  position: fixed;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  margin-left: 450px;
+  width: 200px;
+  top: 40px;
+}
+
+div.topbox {
+  margin-left: 5px;
+  margin-top: 5px;
+  position: relative;
+  float: left;
+  height: 86px;
+  color: rgb(0,0,0);
+}
+
+div.topbox:hover {
+  color: rgb(250,250,250);
+}
+
+div.topbox.square {
+  width: 86px;
+}
+
+div.topbox.upsquare {
+  background-image: url('/res/images/up-arrow.png');
+  position: absolute;
+  margin-right: 5px;
+  height: 38px;
+  width: 38px;
+  right: 0px;
+  top: 0px;
+}
+
+div.topbox.rect {
+  width: 415px;
+}
+
+div.topbox.red { background-color: rgb(240,144,144); }
+div.topbox.blue { background-color: rgb(144,144,240); }
+div.topbox.green { background-color: rgb(140,200,140); }
+div.topbox.yellow { background-color: rgb(240,240,144); }
+div.topbox.violet { background-color: rgb(178,120,178); }
+div.topbox.orange { background-color: rgb(242,195,146); }
+div.topbox.grey { background-color: rgb(200,200,200); }
+
+div.topbox.red:hover { background-color: rgb(240,60,60); }
+div.topbox.blue:hover { background-color: rgb(60,60,240); }
+div.topbox.green:hover { background-color: rgb(60,200,60); }
+div.topbox.yellow:hover { background-color: rgb(240,240,60); }
+div.topbox.violet:hover { background-color: rgb(140,60,140); }
+div.topbox.orange:hover { background-color: rgb(240,150,60); }
+div.topbox.grey:hover { background-color: rgb(140,140,140); }
+
+div.thumbs {
+  padding-bottom: 30px;
+  margin-left: 15px;
+  width: 840px;
+  float: left;
+}
+
+div.thumbs.links {
+  padding-bottom: 10px;
+}
+
+div.thumb {
+  background: url('') center center no-repeat;
+  background-color: rgb(240,240,240);
+  border: 1px solid rgb(200,200,200);
+  float: left;
+  width: 220px;
+  height: 165px;
+  margin-left: 5px;
+  margin-top: 5px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+img.mythumb {
+  float: right;
+  border: 1px solid rgb(200,200,200);
+  margin: 0px 0px 10px 20px;
+  padding: 4px;
+}
+
+div.thumbtip {
+  background-color: rgb(255,255,255);
+  border: 1px solid rgb(200,200,200);
+  position: absolute;
+  width: 320px;
+  height: 175px;
+}
+
+div#lightboxDiv {
+  background-color: rgb(255,255,255);
+  opacity: 0.5;
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+}
+
+div#lightboxText {
+  background-color: rgb(255,255,255);
+  border-width: 1px 5px 1px 5px;
+  border-color: rgb(200,200,200);
+  border-style: solid;
+  position: fixed;
+}
+
+div#lightboxTitle {
+  background-color: rgb(255,255,255);
+  font-family: gsSansSerifRegular;
+  font-size: 20px;
+  opacity: 0.6;
+  padding: 5px;
+  position: fixed;
+  display: block;
+}
+
+img#lightboxImage {
+  background-color: rgb(255,255,255);
+  border-width: 1px 5px 1px 5px;
+  border-color: rgb(200,200,200);
+  border-style: solid;
+  position: fixed;
+  display: block;
+  width: 10px;
+  height: 10px;
+}
+
+p.bottomurl {
+  font-family: gsSansSerifBlack;
+  font-size: 28px;
+  color: rgb(140,140,140);
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 8px;
+}
+
+.topname {
+  font-family: gsSansSerifBlack;
+  font-size: 32px;
+  color: rgb(0,0,0);
+  position: absolute;
+  margin: 5px;
+  top: 0px;
+  left: 0px;
+}
+
+.boxtext {
+  font-family: gsSansSerifBlack;
+  font-size: 18px;
+  position: absolute;
+  margin: 5px;
+  right: 0px;
+  bottom: 0px;
+}
+
+.title {
+  font-family: gsSansSerifBlack;
+  font-size: 20px;
+  color: rgb(0,0,0);
+  background-color: rgb(255,255,255);
+  opacity: 0.6;
+  padding: 5px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.title.sub {
+  font-family: gsSansSerifRegular;
+  top: 50px;
+}
+
+#titlegraphic {
+  background-color: rgb(200,200,200);
+  background-image: url('/res/images/wood.png');
+  position: relative;
+  margin-left: 5px;
+  margin-top: 5px;
+  height: 150px;
+  width: 870px;
+}
+
+.linkcaption {
+  font-family: gsSansSerifBlack;
+  font-size: 16px;
+  padding-left: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.linkcontent {
+  margin-right: 100px;
+}
+
+p.sechead {
+  font-family: gsSansSerifRegular;
+  font-size: 16px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+p.seclink {
+  font-family: gsSansSerifRegular;
+  font-size: 12px;
+  margin: 10px;
+}
+
+p.para, ul {
+  margin-left: 20px;
+  margin-right: 50px;
+}
+
+p.ytvid {
+  margin-left: 20px;
+}
+
+p.lbox {
+  font-family: gsSerifRegular;
+  font-size: 12px;
+  margin: 10px;
+}
+
+table.bom {
+  text-align: left;
+  margin-left: 20px;
+  border-width: 1px 5px 1px 5px;
+  border-color: rgb(200,200,200);
+  border-style: solid;
+  width: 80%;
+}
+
+td.bom.grey {
+  padding: 5px;
+  border-width: 0px 0px 1px 0px;
+  border-color: rgb(200,200,200);
+  border-style: solid;
+}
