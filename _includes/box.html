@@ -1,8 +1,10 @@
-      <a href="{{ site.url }}/{{ include.link }}">
+      <a href="{% if include.link %}{{ site.url }}/{{ include.link }}{% else %}#top{% endif %}">
         <div class="topbox {{ include.type }} {{ include.color }}">
           {% if include.type == "rect" %}
           <font class="topname">Bradley Worley</font>
           {% endif %}
+          {% if include.text %}
           <font class="boxtext">{{ include.text }}</font>
+          {% endif %}
         </div>
       </a>
