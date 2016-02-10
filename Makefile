@@ -5,6 +5,8 @@ EQ+= gpufield/04 gpufield/05 gpufield/06
 EQ+= orbitals/01 orbitals/02 orbitals/03
 EQ+= orbitals/04 orbitals/05 orbitals/06
 
+EQ+= bezier/01
+
 PNG=$(addsuffix .png,$(EQ))
 
 .SUFFIXES: .tex .png
