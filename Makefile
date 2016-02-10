@@ -1,5 +1,6 @@
 
-EQUATIONS=gpufield/01
+EQUATIONS=  gpufield/01 gpufield/02 gpufield/03
+EQUATIONS+= gpufield/04 gpufield/05 gpufield/06
 
 PNG=$(addsuffix .png,$(EQUATIONS))
 
