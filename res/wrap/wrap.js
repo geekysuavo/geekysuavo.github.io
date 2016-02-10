@@ -72,46 +72,6 @@ function hideElement (id) {
   el.style.display = "none";
 }
 
-/* createRequest: creates an ajax request object. */
-function createRequest () {
-  /* try any and all means available. */
-  try { return new XMLHttpRequest (); } catch (e) {}
-  try { return new ActiveXObject ("Msxml2.XMLHTTP.6.0"); } catch (e) {}
-  try { return new ActiveXObject ("Msxml2.XMLHTTP.3.0"); } catch (e) {}
-  try { return new ActiveXObject ("Msxml2.XMLHTTP"); } catch (e) {}
-  try { return new ActiveXObject ("Microsoft.XMLHTTP"); } catch (e) {}
-
-  /* no support exists. */
-  return null;
-}
-
-/* handleResponse: handles an ajax tooltip request response. */
-function handleResponse (request, suffix) {
-  /* make sure the response is a successful one. */
-  if (request.readyState == 4 && request.status == 200) {
-    /* set the inner html of the tooltip div. */
-    setInnerHTML ("lightboxText", request.responseText);
-    showElement ("lightboxText");
-  }
-}
-
-/* sendRequest: sends an ajax tooltip request. */
-function sendRequest (project, suffix) {
-  /* create a request. */
-  var request = createRequest ();
-
-  /* only works if we got an object. */
-  if (request) {
-    /* send an async request. */
-    request.open ("GET",
-      "../res/wrap/tip.php?p=" + project + "&f=" + suffix, true);
-    request.onreadystatechange = function () {
-      handleResponse (request, suffix);
-    };
-    request.send (null);
-  }
-}
-
 /* showLightbox: initializes and shows the lightbox with a given image. */
 function showLightbox (project, filename, url, width, height, tip) {
   /* set the lightbox image size. */
@@ -120,7 +80,6 @@ function showLightbox (project, filename, url, width, height, tip) {
   /* calculate the lightbox image coordinates. */
   var x = window.innerWidth / 2.0 - (width / 2.0);
   var y = window.innerHeight / 2.0 - (height / 2.0);
-  var t = tip.replace (/\s/g, "X");
 
   /* set the lightbox image coordinates. */
   setPosition ("lightboxImage", x, y);
@@ -139,10 +98,11 @@ function showLightbox (project, filename, url, width, height, tip) {
   setInnerHTML ("lightboxTitle", filename);
 
   /* set the lightbox text strings. */
-  setInnerHTML ("lightboxText", t);
+  setInnerHTML ("lightboxText", tip);
 
   /* show the lightbox elements. */
   showElement ("lightboxDiv");
+  showElement ("lightboxText");
   showElement ("lightboxTitle");
   showElement ("lightboxImage");
 }
