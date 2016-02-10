@@ -24,25 +24,25 @@ imagesB:
     height: 597
     tip: The second-revision thermy schematic.
   - file: thermyv2-brd.png
-    width: 604
-    height: 282
+    width: 426
+    height: 410
     tip: The second-revision thermy board design.
   - file: thermyv2-top.png
-    width: 800
-    height: 359
+    width: 614
+    height: 600
     tip: The batchpcb rendering of thermyv2.
 imagesC:
   - file: thermyv3-sch.png
-    width: 800
-    height: 597
+    width: 796
+    height: 600
     tip: The third-revision thermy schematic.
   - file: thermyv3-brd.png
-    width: 604
-    height: 282
+    width: 525
+    height: 411
     tip: The third-revision thermy board design.
   - file: thermyv3-top.png
-    width: 800
-    height: 359
+    width: 776
+    height: 600
     tip: The batchpcb rendering of thermyv3.
 imagesD:
   - file: pic01.png
