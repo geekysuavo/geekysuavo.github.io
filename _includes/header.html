@@ -1,7 +1,13 @@
 <!doctype html>
 <html>
   <head>
-    <title>{{ page.title }}</title>
+    <title>
+      {% if page.title %}
+      {{ page.title }} - geekysuavo.github.io
+      {% else %}
+      geekysuavo.github.io
+      {% endif %}
+    </title>
     <link
       rel="stylesheet"
       type="text/css"
