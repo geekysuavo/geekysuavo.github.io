@@ -1,8 +1,11 @@
 
-EQUATIONS=  gpufield/01 gpufield/02 gpufield/03
-EQUATIONS+= gpufield/04 gpufield/05 gpufield/06
+EQ=  gpufield/01 gpufield/02 gpufield/03
+EQ+= gpufield/04 gpufield/05 gpufield/06
 
-PNG=$(addsuffix .png,$(EQUATIONS))
+EQ+= orbitals/01 orbitals/02 orbitals/03
+EQ+= orbitals/04 orbitals/05 orbitals/06
+
+PNG=$(addsuffix .png,$(EQ))
 
 .SUFFIXES: .tex .png
 
