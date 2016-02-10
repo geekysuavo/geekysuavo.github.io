@@ -16,7 +16,7 @@ and function, with (mostly) POSIX-compliant syntax and a more centralized
 set of functionality.
 
 While the pkgtools scripts perform most of their functions under the
-impression that the key information about the package lies with it's
+impression that the key information about the package lies with its
 filename, the Pkg scripts looked inside package files to determine their
 critical features.
 
