@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
+
+  <title>Manpage of REMOVEPKG</title>
+
+  <link rel="stylesheet" type="text/css" href="man8.css" />
+</head>
+
+<body>
+  <h1>REMOVEPKG</h1>Section: Maintenance Commands (8)<br>
+  Updated: 2 May 2007<br>
+  <a href="#index">Index</a> <a href="index.php">Return to Main Contents</a>
+  <hr>
+  <a name="lbAB">&nbsp;</a>
+
+  <h2>NAME</h2>removepkg - remove installed system packages.
+  <a name="lbAC">&nbsp;</a>
+
+  <h2>SYNOPSIS</h2><b>removepkg</b> [ <b>-h, --help</b> ] [ <b>-w,
+  --report</b> ] <b>pkgname</b> [ <b>pkgname2, ...</b> ] <a name=
+  "lbAD">&nbsp;</a>
+
+  <h2>DESCRIPTION</h2><b>removepkg</b> removes any packages whose
+  names match the package names given from the command-line. This
+  performs (essentially) the same action as would <b>pkg remove [
+  pkgname, pkgname2, ... ].</b>
+
+  <p><b>removepkg</b> will not delete any files which are 'owned'
+  by another package, so please make sure that no two packages you
+  create will install files over each other. <a name=
+  "lbAE">&nbsp;</a></p>
+
+  <h2>OPTIONS</h2>
+
+  <dl compact>
+    <dt><b>-h, --help</b></dt>
+
+    <dd>When this option is specified, <b>removepkg</b> will print
+    its own usage instructions and exit.</dd>
+
+    <dt><b>-w, --report</b></dt>
+
+    <dd>This will cause <b>removepkg</b> to only generate a report
+    of the proposed removal instead of actually removing any files.
+    This can be useful to see what files will be removed.</dd>
+  </dl><a name="lbAF">&nbsp;</a>
+
+  <h2>AUTHOR</h2>Bradley A. Worley &lt;<a href=
+  "mailto:geekysuavo@gmail.com">geekysuavo@gmail.com</a>&gt;
+  <a name="lbAG">&nbsp;</a>
+
+  <h2>SEE ALSO</h2><b><a href=
+  "../man8/buildpkg.8.html">buildpkg</a>(8),</b> <b><a href=
+  "../man8/explodepkg.8.html">explodepkg</a>(8),</b> <b><a href=
+  "../man8/infopkg.8.html">infopkg</a>(8),</b> <b><a href=
+  "../man8/installpkg.8.html">installpkg</a>(8),</b> <b><a href=
+  "../man8/makepkg.8.html">makepkg</a>(8),</b> <b><a href=
+  "../man8/pkg.8.html">pkg</a>(8),</b> <b><a href=
+  "../man8/servepkg.8.html">servepkg</a>(8),</b> <b><a href=
+  "../man8/upgradepkg.8.html">upgradepkg</a>(8)</b>
+  <hr>
+  <a name="index">&nbsp;</a>
+
+  <h2>Index</h2>
+
+  <dl>
+    <dt><a href="#lbAB">NAME</a></dt>
+
+    <dt><a href="#lbAC">SYNOPSIS</a></dt>
+
+    <dt><a href="#lbAD">DESCRIPTION</a></dt>
+
+    <dt><a href="#lbAE">OPTIONS</a></dt>
+
+    <dt><a href="#lbAF">AUTHOR</a></dt>
+
+    <dt><a href="#lbAG">SEE ALSO</a></dt>
+  </dl>
+  <hr>
+  This document was created by <a href=
+  "http://localhost/cgi-bin/man/man2html">man2html</a>, using the
+  manual pages.<br>
+  Time: 19:04:52 GMT, July 10, 2007
+</body>
+</html>

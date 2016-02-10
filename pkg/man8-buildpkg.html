@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
+
+  <title>Manpage of BUILDPKG</title>
+
+  <link rel="stylesheet" type="text/css" href="man8.css" />
+</head>
+
+<body>
+  <h1>BUILDPKG</h1>Section: Maintenance Commands (8)<br>
+  Updated: 22 May 2007<br>
+  <a href="#index">Index</a> <a href="index.php">Return to Main Contents</a>
+  <hr>
+  <a name="lbAB">&nbsp;</a>
+
+  <h2>NAME</h2>buildpkg - build system packages from source.
+  <a name="lbAC">&nbsp;</a>
+
+  <h2>SYNOPSIS</h2><b>buildpkg</b> [ <b>-h, --help</b> ] [ <b>-v,
+  --verbose</b> ] [ <b>-u, --clean-source</b> ] <b>buildfile</b>
+  <a name="lbAD">&nbsp;</a>
+
+  <h2>DESCRIPTION</h2><b>buildpkg</b> uses *.build files to
+  generate package files from source. In the event that the
+  specified <b>buildfile</b> is a nonexistant file, <b>buildpkg</b>
+  will create it for later editing and will fill it with default
+  values. (This is the recommended method for creating build files)
+  <a name="lbAE">&nbsp;</a>
+
+  <h2>OPTIONS</h2>
+
+  <dl compact>
+    <dt><b>-h, --help</b></dt>
+
+    <dd>When this option is specified, <b>buildpkg</b> will print
+    its own usage instructions and exit.</dd>
+
+    <dt><b>-v, --verbose</b></dt>
+
+    <dd>This option will cause <b>buildpkg</b> to output more
+    information about the build process than usual. In particular,
+    this can be useful when a package's build process fails at a
+    given point not clearly identifiable by regular output.</dd>
+
+    <dt><b>-u, --clean-source</b></dt>
+
+    <dd>This option causes <b>buildpkg</b> to remove the source
+    tarball from the build directory after the package has been
+    built. This is not really useful, unless the source tarball in
+    question is <b>guaranteed</b> to exist online for the entire
+    duration of its use.</dd>
+  </dl><a name="lbAF">&nbsp;</a>
+
+  <h2>SOURCE FILES</h2><b>buildpkg</b> looks in the current working
+  directory for source tarballs and patches. If the source tarball
+  doesn't exist in that location, <b>buildpkg</b> will attempt to
+  download it from the URL given in the build file. <a name=
+  "lbAG">&nbsp;</a>
+
+  <h2>AUTHOR</h2>Bradley A. Worley &lt;<a href=
+  "mailto:geekysuavo@gmail.com">geekysuavo@gmail.com</a>&gt;
+  <a name="lbAH">&nbsp;</a>
+
+  <h2>SEE ALSO</h2><b><a href=
+  "../man8/explodepkg.8.html">explodepkg</a>(8),</b> <b><a href=
+  "../man8/infopkg.8.html">infopkg</a>(8),</b> <b><a href=
+  "../man8/installpkg.8.html">installpkg</a>(8),</b> <b><a href=
+  "../man8/makepkg.8.html">makepkg</a>(8),</b> <b><a href=
+  "../man8/pkg.8.html">pkg</a>(8),</b> <b><a href=
+  "../man8/removepkg.8.html">removepkg</a>(8),</b> <b><a href=
+  "../man8/servepkg.8.html">servepkg</a>(8),</b> <b><a href=
+  "../man8/upgradepkg.8.html">upgradepkg</a>(8)</b>
+  <hr>
+  <a name="index">&nbsp;</a>
+
+  <h2>Index</h2>
+
+  <dl>
+    <dt><a href="#lbAB">NAME</a></dt>
+
+    <dt><a href="#lbAC">SYNOPSIS</a></dt>
+
+    <dt><a href="#lbAD">DESCRIPTION</a></dt>
+
+    <dt><a href="#lbAE">OPTIONS</a></dt>
+
+    <dt><a href="#lbAF">SOURCE FILES</a></dt>
+
+    <dt><a href="#lbAG">AUTHOR</a></dt>
+
+    <dt><a href="#lbAH">SEE ALSO</a></dt>
+  </dl>
+  <hr>
+  This document was created by <a href=
+  "http://localhost/cgi-bin/man/man2html">man2html</a>, using the
+  manual pages.<br>
+  Time: 19:04:52 GMT, July 10, 2007
+</body>
+</html>

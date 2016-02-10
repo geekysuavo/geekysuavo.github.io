@@ -28,7 +28,16 @@ in a straightforward manner.
 
 # Manual pages
 
-FIXME
+ * [buildpkg.8](man8-buildpkg.html)
+ * [explodepkg.8](man8-explodepkg.html)
+ * [infopkg.8](man8-infopkg.html)
+ * [installpkg.8](man8-installpkg.html)
+ * [makepkg.8](man8-makepkg.html)
+ * [pkg.8](man8-pkg.html)
+ * [removepkg.8](man8-removepkg.html)
+ * [servepkg.8](man8-servepkg.html)
+ * [sourcepkg.8](man8-sourcepkg.html)
+ * [upgradepkg.8](man8-upgradepkg.html)
 
 # Source code
 

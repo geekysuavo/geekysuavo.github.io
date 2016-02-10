@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
+
+  <title>Manpage of MAKEPKG</title>
+
+  <link rel="stylesheet" type="text/css" href="man8.css" />
+</head>
+
+<body>
+  <h1>MAKEPKG</h1>Section: Maintenance Commands (8)<br>
+  Updated: 22 May 2007<br>
+  <a href="#index">Index</a> <a href="index.php">Return to Main Contents</a>
+  <hr>
+  <a name="lbAB">&nbsp;</a>
+
+  <h2>NAME</h2>makepkg - make system packages using a directory.
+  <a name="lbAC">&nbsp;</a>
+
+  <h2>SYNOPSIS</h2><b>makepkg</b> [ <b>-h, --help</b> ] [ <b>-l,
+  --add-links</b> ] [ <b>-b, --prepend</b> ] [ <b>-o,
+  --ownership</b> ] [ <b>-x, --nosuid</b> ] [ <b>-z,
+  --compress-man</b> ] [ <b>-g, --no-strip</b> ] <b>pkgfile</b>
+  <a name="lbAD">&nbsp;</a>
+
+  <h2>DESCRIPTION</h2><b>makepkg</b> creates new pkg-scripts
+  compatible package files using the contents of the current
+  working directory. Any files inside the current directory will
+  represent files residing on the filesystem root directory. ("/",
+  or whatever directory is passed with <b>--root</b> to
+  <b>installpkg</b> ). <a name="lbAE">&nbsp;</a>
+
+  <h2>OPTIONS</h2>
+
+  <dl compact>
+    <dt><b>-h, --help</b></dt>
+
+    <dd>When this option is specified, <b>makepkg</b> will print
+    its own usage instructions and exit.</dd>
+
+    <dt><b>-l, --add-links</b></dt>
+
+    <dd>This will cause <b>makepkg</b> to move all of the symlinks
+    from the current working directory into the installation script
+    of the package. This is recommended, especially if libraries
+    are installed.</dd>
+
+    <dt><b>-b, --prepend</b></dt>
+
+    <dd>In conjunction with <b>--add-links</b> , this option will
+    cause <b>makepkg</b> to place symlinks at the beginning of the
+    installation script.</dd>
+
+    <dt><b>-o, --ownership</b></dt>
+
+    <dd>Specifying this option will ensure that every file in the
+    working directory is reset back to root:root ownership settings
+    before being added to the package.</dd>
+
+    <dt><b>-x, --nosuid</b></dt>
+
+    <dd>Specifying this option will ensure that no binaries in the
+    working directory are packaged with setuid or setgid bits
+    enabled. (This is mainly available as a blanket option to
+    enable security of the package, but it's not advisable in all
+    situations).</dd>
+
+    <dt><b>-z, --compress-man</b></dt>
+
+    <dd>Specifying this option will cause <b>makepkg</b> to
+    compress all manual pages inside the working directory before
+    adding them to the package file.</dd>
+
+    <dt><b>-g, --no-strip</b></dt>
+
+    <dd>Specifying this option will cause <b>makepkg</b> to strip
+    all binaries and libraries inside the working directory before
+    adding them to the package file.</dd>
+  </dl><a name="lbAF">&nbsp;</a>
+
+  <h2>AUTHOR</h2>Bradley A. Worley &lt;<a href=
+  "mailto:geekysuavo@gmail.com">geekysuavo@gmail.com</a>&gt;
+  <a name="lbAG">&nbsp;</a>
+
+  <h2>SEE ALSO</h2><b><a href=
+  "../man8/buildpkg.8.html">buildpkg</a>(8),</b> <b><a href=
+  "../man8/explodepkg.8.html">explodepkg</a>(8),</b> <b><a href=
+  "../man8/infopkg.8.html">infopkg</a>(8),</b> <b><a href=
+  "../man8/installpkg.8.html">installpkg</a>(8),</b> <b><a href=
+  "../man8/pkg.8.html">pkg</a>(8),</b> <b><a href=
+  "../man8/removepkg.8.html">removepkg</a>(8),</b> <b><a href=
+  "../man8/servepkg.8.html">servepkg</a>(8),</b> <b><a href=
+  "../man8/upgradepkg.8.html">upgradepkg</a>(8)</b>
+  <hr>
+  <a name="index">&nbsp;</a>
+
+  <h2>Index</h2>
+
+  <dl>
+    <dt><a href="#lbAB">NAME</a></dt>
+
+    <dt><a href="#lbAC">SYNOPSIS</a></dt>
+
+    <dt><a href="#lbAD">DESCRIPTION</a></dt>
+
+    <dt><a href="#lbAE">OPTIONS</a></dt>
+
+    <dt><a href="#lbAF">AUTHOR</a></dt>
+
+    <dt><a href="#lbAG">SEE ALSO</a></dt>
+  </dl>
+  <hr>
+  This document was created by <a href=
+  "http://localhost/cgi-bin/man/man2html">man2html</a>, using the
+  manual pages.<br>
+  Time: 19:04:52 GMT, July 10, 2007
+</body>
+</html>

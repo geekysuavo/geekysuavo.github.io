@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
+
+  <title>Manpage of INSTALLPKG</title>
+
+  <link rel="stylesheet" type="text/css" href="man8.css" />
+</head>
+
+<body>
+  <h1>INSTALLPKG</h1>Section: Maintenance Commands (8)<br>
+  Updated: 22 May 2007<br>
+  <a href="#index">Index</a> <a href="index.php">Return to Main Contents</a>
+  <hr>
+  <a name="lbAB">&nbsp;</a>
+
+  <h2>NAME</h2>servepkg - manage local package repositories.
+  <a name="lbAC">&nbsp;</a>
+
+  <h2>SYNOPSIS</h2><b>servepkg</b> [ <b>--create-repo REPONAME
+  DIR</b> ]
+
+  <p><b>servepkg</b> [ <b>--delete-repo REPONAME</b> ]</p>
+
+  <p><b>servepkg</b> [ <b>--add-pkg FILE REPO/CATEGORY</b> ]</p>
+
+  <p><b>servepkg</b> [ <b>--remove-pkg FILE REPO/CATEGORY</b> ]</p>
+
+  <p><b>servepkg</b> [ <b>--list-repo REPONAME</b> ] <a name=
+  "lbAD">&nbsp;</a></p>
+
+  <h2>DESCRIPTION</h2>Pkg-style repositories are fairly simple in
+  practice, but manually maintaining their uniformity can be
+  mundane. <b>servepkg</b> provides a simple interface for managing
+  local package repositories through one interface. It maintains
+  the repository package listing, and ensures that each package
+  served has a corresponding header and checksum file. <a name=
+  "lbAE">&nbsp;</a>
+
+  <h2>OPTIONS</h2>
+
+  <dl compact>
+    <dt><b>--create-repo REPONAME DIR</b></dt>
+
+    <dd>This option creates a repository by the name REPONAME that
+    is located at the directory DIR. <b>servepkg</b> will create
+    the directories listed in the <b>repos.conf</b> file as
+    subdirectories of DIR.</dd>
+
+    <dt><b>--delete-repo REPONAME</b></dt>
+
+    <dd>This option removes an entire repository and its
+    subdirectories from the filesystem, and removes the entry in
+    the <b>repos.conf</b> file.</dd>
+
+    <dt><b>--add-pkg FILE REPO/CATEGORY</b></dt>
+
+    <dd>This option adds a package file into the given repository
+    and the given package category, creates the required headers
+    and checksums, and remakes the repository files listing.</dd>
+
+    <dt><b>--remove-pkg FILE REPO/CATEGORY</b></dt>
+
+    <dd>This option removes the package file (if found) from the
+    given repository category, and regenerates the repository files
+    listing.</dd>
+
+    <dt><b>--list-repo REPONAME</b></dt>
+
+    <dd>This option lists the package contents of a given locally
+    managed repository.</dd>
+  </dl><a name="lbAF">&nbsp;</a>
+
+  <h2>AUTHOR</h2>Bradley A. Worley &lt;<a href=
+  "mailto:geekysuavo@gmail.com">geekysuavo@gmail.com</a>&gt;
+  <a name="lbAG">&nbsp;</a>
+
+  <h2>SEE ALSO</h2><b><a href=
+  "../man8/buildpkg.8.html">buildpkg</a>(8),</b> <b><a href=
+  "../man8/explodepkg.8.html">explodepkg</a>(8),</b> <b><a href=
+  "../man8/infopkg.8.html">infopkg</a>(8),</b> <b><a href=
+  "../man8/installpkg.8.html">installpkg</a>(8),</b> <b><a href=
+  "../man8/makepkg.8.html">makepkg</a>(8),</b> <b><a href=
+  "../man8/pkg.8.html">pkg</a>(8),</b> <b><a href=
+  "../man8/removepkg.8.html">removepkg</a>(8),</b> <b><a href=
+  "../man8/upgradepkg.8.html">upgradepkg</a>(8)</b>
+  <hr>
+  <a name="index">&nbsp;</a>
+
+  <h2>Index</h2>
+
+  <dl>
+    <dt><a href="#lbAB">NAME</a></dt>
+
+    <dt><a href="#lbAC">SYNOPSIS</a></dt>
+
+    <dt><a href="#lbAD">DESCRIPTION</a></dt>
+
+    <dt><a href="#lbAE">OPTIONS</a></dt>
+
+    <dt><a href="#lbAF">AUTHOR</a></dt>
+
+    <dt><a href="#lbAG">SEE ALSO</a></dt>
+  </dl>
+  <hr>
+  This document was created by <a href=
+  "http://localhost/cgi-bin/man/man2html">man2html</a>, using the
+  manual pages.<br>
+  Time: 19:04:52 GMT, July 10, 2007
+</body>
+</html>

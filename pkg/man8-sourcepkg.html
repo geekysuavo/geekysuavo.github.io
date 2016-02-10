@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<html>
+<head>
+  <meta name="generator" content=
+  "HTML Tidy for Linux (vers 25 March 2009), see www.w3.org">
+
+  <title>Manpage of SOURCEPKG</title>
+
+  <link rel="stylesheet" type="text/css" href="man8.css" />
+</head>
+
+<body>
+  <h1>SOURCEPKG</h1>Section: Maintenance Commands (8)<br>
+  Updated: 22 May 2007<br>
+  <a href="#index">Index</a> <a href="index.php">Return to Main Contents</a>
+  <hr>
+  <a name="lbAB">&nbsp;</a>
+
+  <h2>NAME</h2>sourcepkg - Generate and compile source package
+  files. <a name="lbAC">&nbsp;</a>
+
+  <h2>SYNOPSIS</h2><b>sourcepkg</b> [ <b>--create</b> ] [
+  <b>--build srcpkgfile</b> ] <a name="lbAD">&nbsp;</a>
+
+  <h2>DESCRIPTION</h2><b>sourcepkg</b> generates and compiles
+  package files of a different format that the rest of the pkg
+  tools use. In order to generate a pkg-compliant binary package
+  file, a developer may perform the <b>makepkg</b> command on the
+  current directory, the <b>buildpkg</b> command on a build
+  instruction file, or the <b>sourcepkg --build</b> command on a
+  source package file. Source packages are essentially the tarred
+  equivalents of the buildpkg directories where build files are
+  kept, so they contain all of the source files required to
+  actually perform the build. <a name="lbAE">&nbsp;</a>
+
+  <h2>OPTIONS</h2>
+
+  <dl compact>
+    <dt><b>--create</b></dt>
+
+    <dd>When this option is specified, <b>sourcepkg</b> will
+    generate a source package file using the contents of the
+    current working directory.</dd>
+
+    <dt><b>--build srcpkgfile</b></dt>
+
+    <dd>This option will cause <b>sourcepkg</b> to extract the
+    source files from a given source package file and compile them
+    into a binary package file.</dd>
+  </dl><a name="lbAF">&nbsp;</a>
+
+  <h2>AUTHOR</h2>Bradley A. Worley &lt;<a href=
+  "mailto:geekysuavo@gmail.com">geekysuavo@gmail.com</a>&gt;
+  <a name="lbAG">&nbsp;</a>
+
+  <h2>SEE ALSO</h2><b><a href=
+  "../man8/buildpkg.8.html">buildpkg</a>(8),</b> <b><a href=
+  "../man8/explodepkg.8.html">explodepkg</a>(8),</b> <b><a href=
+  "../man8/infopkg.8.html">infopkg</a>(8),</b> <b><a href=
+  "../man8/installpkg.8.html">installpkg</a>(8),</b> <b><a href=
+  "../man8/makepkg.8.html">makepkg</a>(8),</b> <b><a href=
+  "../man8/pkg.8.html">pkg</a>(8),</b> <b><a href=
+  "../man8/removepkg.8.html">removepkg</a>(8),</b> <b><a href=
+  "../man8/servepkg.8.html">servepkg</a>(8),</b> <b><a href=
+  "../man8/upgradepkg.8.html">upgradepkg</a>(8)</b>
+  <hr>
+  <a name="index">&nbsp;</a>
+
+  <h2>Index</h2>
+
+  <dl>
+    <dt><a href="#lbAB">NAME</a></dt>
+
+    <dt><a href="#lbAC">SYNOPSIS</a></dt>
+
+    <dt><a href="#lbAD">DESCRIPTION</a></dt>
+
+    <dt><a href="#lbAE">OPTIONS</a></dt>
+
+    <dt><a href="#lbAF">AUTHOR</a></dt>
+
+    <dt><a href="#lbAG">SEE ALSO</a></dt>
+  </dl>
+  <hr>
+  This document was created by <a href=
+  "http://localhost/cgi-bin/man/man2html">man2html</a>, using the
+  manual pages.<br>
+  Time: 19:41:26 GMT, July 25, 2007
+</body>
+</html>
