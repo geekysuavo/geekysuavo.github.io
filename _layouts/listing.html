@@ -1,0 +1,18 @@
+{% include header.html %}
+{% include middle.html %}
+<p></p>
+{% for project in page.projects %}
+<div class="thumbs links">
+  <a href="{{ site.url }}/{{ project.link }}">
+    <div class="thumb"
+      style="margin-right: 10px; background: url({{ site.db }}{{ project.link }}/thumb.png.png) center no-repeat;">
+    </div>
+  </a>
+  <div>
+    <div class="linkcaption">{{ project.caption }}</div>
+    <p class="linkcontent">{{ project.content }}</p>
+  </div>
+</div>
+{% endfor %}
+{{ content }}
+{% include footer.html sidebar=false %}
