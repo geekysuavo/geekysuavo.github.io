@@ -171,7 +171,7 @@ window.onload = function () {
 
   for (var i = 0; i < heads.length; i++) {
     var headId = heads[i].id;
-    var headStr = '<a onclick="scrollToId(\'' +
+    var headStr = '<a href="" onclick="scrollToId(\'' +
                   headId + '\');"><p class="seclink">' +
                   headId + '</p></a>';
 
