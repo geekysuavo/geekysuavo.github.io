@@ -32,5 +32,5 @@ FIXME
 
 # Source code
 
- * test
+ * [pkg-20070813.tgz]({{site.db}}pkg/pkg-20070813.tgz)
 
