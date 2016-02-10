@@ -386,6 +386,10 @@ p.lbox {
   margin: 10px;
 }
 
+code {
+  margin-left: 40px;
+}
+
 table.bom {
   text-align: left;
   margin-left: 20px;
