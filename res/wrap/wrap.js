@@ -132,7 +132,7 @@ window.onload = function () {
   /* loop over each tag. */
   for (var i = 0; i < heads.length; i++) {
     /* build a link string from the tag id. */
-    var headId = heads[i].id;
+    var headId = heads[i].id.replace ("-", " ");
     var headStr = '<a href="#" onclick="scrollToId(\'' +
                   headId + '\'); return false;">' +
                   '<p class="seclink">' + headId + '</p></a>';
