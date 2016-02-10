@@ -81,7 +81,7 @@ more recent packages than required. **:)**
 
 # Screenshots
 
-{% include gallery.html images=page.images %}
+{% include gallery.html images=page.images dir="notifier" %}
 
 # Source code
 
