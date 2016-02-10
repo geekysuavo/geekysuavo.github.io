@@ -55,7 +55,7 @@ imagesD:
     width: 640
     height: 480
     tip: >
-      A picture of my setup in my sister's old room. Not too shabby for a
+      A picture of my setup in my sisters old room. Not too shabby for a
       first electronics work bench.
   - file: pic03.png
     width: 640
@@ -72,11 +72,11 @@ imagesD:
     height: 480
     tip: >
       Here I've added a few resistors. You can see that the footprints
-      weren't quite big enough... oops!
+      werent quite big enough... oops!
   - file: pic06.png
     width: 640
     height: 480
-    tip: Here's the board with the last seven-segment display hooked up.
+    tip: Heres the board with the last seven-segment display hooked up.
   - file: pic07.png
     width: 640
     height: 480
@@ -84,7 +84,7 @@ imagesD:
   - file: pic08.png
     width: 640
     height: 480
-    tip: I've laid down all the displays... looking good so far.
+    tip: Ive laid down all the displays... looking good so far.
   - file: pic09.png
     width: 640
     height: 480
@@ -119,7 +119,7 @@ imagesD:
   - file: pic16.png
     width: 640
     height: 480
-    tip: The assembled and soldered hackjob for my v2 sensor. Didn't work.
+    tip: The assembled and soldered hackjob for my v2 sensor. Didnt work.
   - file: pic17.png
     width: 640
     height: 480
@@ -141,7 +141,7 @@ imagesD:
   - file: pic21.png
     width: 640
     height: 480
-    tip: A closeup of the way I'm programming thermyv3.
+    tip: A closeup of the way I programmed thermyv3.
   - file: pic22.png
     width: 640
     height: 480
@@ -158,7 +158,7 @@ imagesD:
     width: 640
     height: 480
     tip: >
-      Here you can see the sensor has been properly soldered on and doesn't
+      Here you can see the sensor has been properly soldered on and doesnt
       overheat. Also, I found a small bug in leds_init.
   - file: pic25.png
     width: 640
@@ -171,8 +171,8 @@ imagesD:
     height: 480
     tip: >
       I fixed the program to run through 250 renderings of the current value
-      before trying to get another reading from the sensor, but I'm still
-      getting a garbage value.
+      before trying to get another reading from the sensor, but I still got
+      garbage values.
   - file: pic27.png
     width: 640
     height: 480
@@ -188,7 +188,7 @@ imagesD:
     width: 640
     height: 480
     tip: >
-      Here I'm using the cursors to measure the voltage difference between
+      Here I used the cursors to measure the voltage difference between
       high and low logic levels on the one-wire bus.
   - file: pic30.png
     width: 640
@@ -207,7 +207,7 @@ imagesD:
     width: 640
     height: 480
     tip: >
-      Yeah, it's working in this picture. Displaying fahrenheit, of course.
+      Yeah, its working in this picture. Displaying fahrenheit, of course.
   - file: pic33.png
     width: 640
     height: 480
@@ -218,7 +218,7 @@ imagesD:
     width: 640
     height: 480
     tip: >
-      Here's thermy with a final fix that I added to display C or F depending
+      Heres thermy with a final fix that I added to display C or F depending
       on which temperature scale the user has selected via the DIP switch.
 ---
 
