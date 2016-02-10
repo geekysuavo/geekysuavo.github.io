@@ -165,19 +165,25 @@ function scrollToId (idStr) {
   el.scrollIntoView();
 }
 
+/* window.onload: initialize the sidebar links, if necessary. */
 window.onload = function () {
+  /* look up all <h1> tags in the document. */
   var heads = document.getElementsByTagName ("h1");
   var str = "";
 
+  /* loop over each tag. */
   for (var i = 0; i < heads.length; i++) {
+    /* build a link string from the tag id. */
     var headId = heads[i].id;
     var headStr = '<a href="#" onclick="scrollToId(\'' +
                   headId + '\'); return false;">' +
                   '<p class="seclink">' + headId + '</p></a>';
 
+    /* add the link string to the final string. */
     str = str + headStr;
   }
 
+  /* update the contents of the sidebar div and make it visible. */
   setInnerHTML ("sidebar", str);
   showElement ("sidebar");
 };
