@@ -32,5 +32,5 @@ FIXME
 
 # Source code
 
-FIXME
+ * {% dropbox pkg/pkg-20070813.tar.bz2 %}
 
