@@ -157,3 +157,25 @@ function hideLightbox () {
   hideElement ("lightboxTitle");
   hideElement ("lightboxImage");
 }
+
+/* scrollToId: scroll the page to a given DOM element. */
+function scrollToId (idStr) {
+  /* look up the element and scroll to it. */
+  var el = document.getElementById(idStr);
+  el.scrollIntoView();
+}
+
+window.onload = function () {
+  var heads = document.getElementsByTagName ("h1");
+  var str = "";
+
+  for (var i = 0; i < heads.length; i++) {
+    var headId = heads[i].id;
+    var headStr = '<p class="seclink" onclick="scrollToId(\'' +
+                  headId + '\');">' + headId + '</p>';
+
+    str = str + headStr;
+  }
+
+  setInnerHTML ("sidebar", str);
+};
