@@ -1,5 +1,5 @@
 ---
-title: About me - geekysuavo.github.io
+title: About me
 heading: About me
 subheading: I'm rather flattered that you're here
 layout: project

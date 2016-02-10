@@ -1,5 +1,5 @@
 ---
-title: geekysuavo.github.io
+title: Welcome
 layout: default
 bar: center
 ---

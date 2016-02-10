@@ -1,0 +1,6 @@
+<div class="thumbs">{% for image in include.images %}
+  <a href="#" name="link:{{ include.dir }}:{{ image.file }}" onclick="showLightbox('{{ include.dir }}', '{{ image.file }}', '{{ site.db }}{{ include.dir }}/{{ image.file }}', {{ image.width }}, {{ image.height }}); return false;">
+    <div class="thumb" style="background: url({{ site.db }}{{ include.dir }}/{{ image.file }}.png) center center no-repeat;">
+    </div>
+  </a>
+{% endfor %}</div>

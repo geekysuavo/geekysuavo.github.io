@@ -1,10 +1,35 @@
 ---
 permalink: /gpufield/
-title: GPUfield - geekysuavo.github.io
+title: GPUfield
 heading: GPUfield
 subheading: A fast magnetostatics solver
 layout: project
 bar: top
+images:
+  - file: image01.png
+    width: 800
+    height: 267
+    tip: >
+      Field maps in the xy-plane (z=0) of the field resulting from a Golay
+      coil designed to produce a linear z-field gradient along the x-axis.
+  - file: image02.png
+    width: 800
+    height: 267
+    tip: >
+      Field maps in the xy-plane (z=0) of the field resulting from a Golay
+      coil designed to produce a linear z-field gradient along the y-axis.
+  - file: image03.png
+    width: 800
+    height: 267
+    tip: >
+      Field maps in the yz-plane (x=0) of the field resulting from a Golay
+      coil designed to produce a linear z-field gradient along the z-axis.
+  - file: image04.png
+    width: 800
+    height: 533
+    tip: >
+      Magnetic field calculations along the x, y and z axes for the Golay
+      x-gradient coil.
 ---
 
 # Introduction
@@ -51,10 +76,10 @@ Whew! Now wasn't that simple?
 
 # Image gallery
 
-I've always fuond magnetic fields to give the most beautiful images, so
+I've always found magnetic fields to give the most beautiful images, so
 here are a few computed results for your enjoyment. **:)**
 
-FIXME
+{% include gallery.html dir="gpufield" images=page.images %}
 
 # The code
 

@@ -1,6 +1,6 @@
 ---
 permalink: /pkg/
-title: pkg - geekysuavo.github.io
+title: Pkg
 heading: A simplistic bash package manager
 subheading: My awful adaptation of slackpkg
 layout: project

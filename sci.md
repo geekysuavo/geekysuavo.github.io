@@ -1,5 +1,5 @@
 ---
-title: Research projects - geekysuavo.github.io
+title: Research projects
 heading: My research projects
 layout: listing
 bar: top

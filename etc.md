@@ -1,5 +1,5 @@
 ---
-title: Miscellany - geekysuavo.github.io
+title: Miscellany
 heading: Miscellany
 subheading: Stuff I couldn't find a place for
 layout: project

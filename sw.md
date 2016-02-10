@@ -1,5 +1,5 @@
 ---
-title: Software projects - geekysuavo.github.io
+title: Software projects
 heading: My software projects
 layout: listing
 bar: top

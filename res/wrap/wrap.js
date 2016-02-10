@@ -113,13 +113,13 @@ function sendRequest (project, suffix) {
 }
 
 /* showLightbox: initializes and shows the lightbox with a given image. */
-function showLightbox (project, filename, w, h) {
+function showLightbox (project, filename, url, width, height, tip) {
   /* set the lightbox image size. */
-  setDimension ("lightboxImage", w, h);
+  setDimension ("lightboxImage", width, height);
 
   /* calculate the lightbox image coordinates. */
-  var x = window.innerWidth / 2.0 - (w / 2.0);
-  var y = window.innerHeight / 2.0 - (h / 2.0);
+  var x = window.innerWidth / 2.0 - (width / 2.0);
+  var y = window.innerHeight / 2.0 - (height / 2.0);
 
   /* set the lightbox image coordinates. */
   setPosition ("lightboxImage", x, y);
@@ -128,20 +128,17 @@ function showLightbox (project, filename, w, h) {
   setPosition ("lightboxTitle", x + 20, y + 20);
 
   /* set the lightbox text coordinates and width. */
-  setPosition ("lightboxText", x, y + h);
-  setWidth ("lightboxText", w);
+  setPosition ("lightboxText", x, y + height);
+  setWidth ("lightboxText", width);
 
   /* set the lightbox image source. */
-  setSrc ("lightboxImage", filename);
+  setSrc ("lightboxImage", url);
 
   /* set the lightbox title text string. */
   setInnerHTML ("lightboxTitle", filename);
 
   /* set the lightbox text strings. */
-  setInnerHTML ("lightboxText", "");
-
-  /* send off for the tooltip. */
-  sendRequest (project, filename);
+  setInnerHTML ("lightboxText", tip);
 
   /* show the lightbox elements. */
   showElement ("lightboxDiv");
