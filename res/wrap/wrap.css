@@ -361,9 +361,11 @@ h1 {
 }
 
 p.seclink {
+  text-decoration: underline blue;
   font-family: gsSansSerifRegular;
   font-size: 12px;
   margin: 10px;
+  color: blue;
 }
 
 p, ul {
