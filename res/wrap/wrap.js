@@ -120,6 +120,7 @@ function showLightbox (project, filename, url, width, height, tip) {
   /* calculate the lightbox image coordinates. */
   var x = window.innerWidth / 2.0 - (width / 2.0);
   var y = window.innerHeight / 2.0 - (height / 2.0);
+  var t = tip.replace (/\s/g, "X");
 
   /* set the lightbox image coordinates. */
   setPosition ("lightboxImage", x, y);
@@ -138,7 +139,7 @@ function showLightbox (project, filename, url, width, height, tip) {
   setInnerHTML ("lightboxTitle", filename);
 
   /* set the lightbox text strings. */
-  setInnerHTML ("lightboxText", tip);
+  setInnerHTML ("lightboxText", t);
 
   /* show the lightbox elements. */
   showElement ("lightboxDiv");
