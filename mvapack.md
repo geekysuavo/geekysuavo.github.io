@@ -10,37 +10,37 @@ images:
     width: 800
     height: 315
     tip: >
-      flow diagram (a) and corresponding processing script (b) of a simple
+      Flow diagram (a) and corresponding processing script (b) of a simple
       metabolic fingerprinting experiment.
   - file: fig-02.png
     width: 800
     height: 287
     tip: >
-      principal component analysis (a) and linear discriminant analysis (b)
+      Principal component analysis (a) and linear discriminant analysis (b)
       scores plots for the coffee dataset.
   - file: fig-03.png
     width: 800
     height: 287
     tip: >
-      orthogonal projections to latent structures regression scores plot (a)
+      Orthogonal projections to latent structures regression scores plot (a)
       and s-plot (b) for the coffee dataset.
   - file: fig-04.png
     width: 800
     height: 600
     tip: >
-      backscaled pseudospectral loadings plot for the coffee dataset when
-      regressed against uv/vis-predicted caffeine concentration.
+      Backscaled pseudospectral loadings plot for the coffee dataset when
+      regressed against UV/Vis-predicted caffeine concentration.
   - file: fig-05.png
     width: 800
     height: 600
     tip: >
-      degree of fit (R<sup>2</sup>) and degree of predictive ability
+      Degree of fit (R<sup>2</sup>) and degree of predictive ability
       (Q<sup>2</sup>) for the PCA model.
   - file: fig-06.png
     width: 800
     height: 600
     tip: >
-      response permutation testing results of R<sup>2</sup> and
+      Response permutation testing results of R<sup>2</sup> and
       Q<sup>2</sup> for the OPLS-R model.
 ---
 
@@ -52,8 +52,8 @@ solutions for the other members of the group, whose main research goals were
 founded on the techniques of NMR metabolomics.
 
 The MVAPACK toolbox originally began as a small set of utilities I could use
-to rapidly load 1D <sup>1</sup>H NMR spectra into a [GNU
-Octave](http://www.gnu.org/software/octave/) environment for whatever
+to rapidly load 1D <sup>1</sup>H NMR spectra into a
+[GNU Octave](http://www.gnu.org/software/octave/) environment for whatever
 mathematical manipulation I was working on at the time. Once I saw how
 simple it could be to manipulate NMR datasets as matrices in Octave, I began
 writing more support code for NMR processing. Finally, the MVAPACK suite had
@@ -83,5 +83,5 @@ The official MVAPACK sources are freely available for academic use at my
 graduate research group's website.
 
  * [Official MVAPACK page](http://bionmr.unl.edu/mvapack.php)
- * [bworley-2013.pdf]({{site.db}}mvapack/bworley-2013.pdf)
+ * [Publication on MVAPACK]({{site.db}}mvapack/bworley-2013.pdf)
 
