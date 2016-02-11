@@ -85,3 +85,10 @@ graduate research group's website.
  * [Official MVAPACK page](http://bionmr.unl.edu/mvapack.php)
  * [Publication on MVAPACK]({{site.db}}mvapack/bworley-2013.pdf)
 
+MVAPACK was recently upgraded to support multiblock bilinear decompositions,
+including MB-PCA, MB-PLS and the newly developed MB-OPLS. You can read about
+the use of multiblock methods in MVAPACK here:
+
+ * [Publication on MB-PCA/MB-PLS]({{site.db}}mvapack/dmarshall-2015.pdf)
+ * [Publication on MB-OPLS]({{site.db}}mvapack/bworley-2015.pdf)
+
