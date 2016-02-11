@@ -399,9 +399,3 @@ table.bom {
   width: 80%;
 }
 
-td.bom.grey {
-  padding: 5px;
-  border-width: 0px 0px 1px 0px;
-  border-color: rgb(200,200,200);
-  border-style: solid;
-}

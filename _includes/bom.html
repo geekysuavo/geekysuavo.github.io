@@ -1,0 +1,27 @@
+<table class="bom">
+  <tr>
+    <td class="bom grey" colspan="5">{{ include.title }}</td>
+  </tr>
+  <tr>
+    <th class="bom">Part</th>
+    <th class="bom">Description</th>
+    <th class="bom">Quantity</th>
+    <th class="bom">Price ea.</th>
+    <th class="bom">Subtotal</th>
+  </tr>{% for part in include.parts %}
+  <tr>
+    <td>
+      <a href="{% if part.vendor == "digikey" %}http://search.digikey.com/scripts/DkSearch/dksus.dll?Detail?name={% elsif part.vendor == "mouser" %}http://www.mouser.com/Search/Refine.aspx?Keyword={% elsif part.vendor == "parts-express" %}http://www.parts-express.com/pe/showdetl.cfm?Partnumber={% endif %}{{ part.part }}">{{ part.part }}</a>
+    </td>
+    <td>{{ part.desc }}</td>
+    <td>{{ part.num }}</td>
+    <td>{{ part.price }}</td>
+    <td class="bom total">{{ part.num }},{{ part.price }},i</td>
+  </tr>
+{% endfor %}  <tr>
+    <td colspan="4">
+      <strong>Total:</strong>
+    </td>
+    <td class="bom total">0,0,r</td>
+  </tr>
+</table>

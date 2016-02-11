@@ -1,3 +1,7 @@
+
+/* subtotal: global variable for filling costs into BOM tables. */
+var subtotal = 0.0;
+
 /* setInnerHTML: sets the inner html of an element. */
 function setInnerHTML (id, markup) {
   /* get the element. */
@@ -123,10 +127,17 @@ function scrollToId (idStr) {
   el.scrollIntoView();
 }
 
-/* window.onload: initialize the sidebar links, if necessary. */
-window.onload = function () {
+/* completeSidebar: complete the page sidebar, if it exists. */
+function completeSidebar () {
+  /* check if the sidebar exists. */
+  var sb = document.getElementById ("sidebar");
+  if (!sb) { return; }
+
   /* look up all <h1> tags in the document. */
   var heads = document.getElementsByTagName ("h1");
+  if (!heads) { return; }
+
+  /* initialize the sidebar html content string. */
   var str = "";
 
   /* loop over each tag. */
@@ -144,4 +155,33 @@ window.onload = function () {
   /* update the contents of the sidebar div and make it visible. */
   setInnerHTML ("sidebar", str);
   showElement ("sidebar");
+}
+
+/* completeTables: complete all bills of materials, if any exist. */
+function completeTables () {
+  /* look up all bom total and subtotal table cells. */
+  var cells = document.getElementsByClassName("bom total");
+  if (!cells) { return; }
+
+  /* loop over each tag. */
+  for (var i = 0; i < cells.length; i++) {
+    /* extract the bits of information from the cell. */
+    var fields = cells[i].innerHTML.split(',');
+
+    /* update the subtotal variable. */
+    subtotal += fields[0] * fields[1];
+    cells[i].innerHTML = subtotal.toFixed(2);
+
+    /* check what kind of operation must be performed. */
+    if (fields[2] == "r") {
+      /* reset the subtotal. */
+      subtotal = 0.0;
+    }
+  }
+}
+
+/* window.onload: perform intelligent page content completion. */
+window.onload = function () {
+  completeSidebar ();
+  completeTables ();
 };
