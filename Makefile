@@ -9,6 +9,8 @@ EQ+= bezier/01
 
 EQ+= ppm/01 ppm/02
 
+EQ+= nusutils/01
+
 PNG=$(addsuffix .png,$(EQ))
 
 .SUFFIXES: .tex .png
