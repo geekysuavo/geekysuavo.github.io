@@ -169,12 +169,17 @@ function completeTables () {
     var fields = cells[i].innerHTML.split(',');
 
     /* update the subtotal variable. */
-    subtotal += fields[0] * fields[1];
-    cells[i].innerHTML = subtotal.toFixed(2);
+    var price = fields[0] * fields[1];
+    subtotal += price;
 
     /* check what kind of operation must be performed. */
-    if (fields[2] == "r") {
+    if (fields[2] == "i") {
+      /* print the subtotal. */
+      cells[i].innerHTML = price.toFixed(2);
+    }
+    else if (fields[2] == "r") {
       /* reset the subtotal. */
+      cells[i].innerHTML = subtotal.toFixed(2);
       subtotal = 0.0;
     }
   }
