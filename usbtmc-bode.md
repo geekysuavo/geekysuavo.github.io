@@ -5,63 +5,66 @@ heading: Bode plotting with the Agilent MSO-X 2024A
 subheading: Laziness is the true mother of invention
 layout: project
 bar: top
-images:
+imagesA:
   - file: test-filter-response.png
     width: 800
     height: 405
     tip: >
-      comparison of the theoretical and measured transfer functions using
-      the usbtmc-bode program. not bad at all, i think!
+      Comparison of the theoretical and measured transfer functions using
+      the usbtmc-bode program. Not bad at all, I think!
   - file: test-filter-circuit.png
     width: 800
     height: 523
     tip: >
-      schematic of the circuit i put together to test the new measurement
+      Schematic of the circuit I put together to test the new measurement
       software.
-  - file: chebyshev-circuit.pdf
+imagesB:
+  - file: chebyshev-circuit.png
     width: 
     height: 
     tip: >
-      circuit schematic of the chebyshev active filter circuit adapted from
-      filterpro recommendations.
+      Circuit schematic of the Chebyshev active filter circuit adapted from
+      TI FilterPro recommendations.
   - file: chebyshev-board.png
     width: 800
     height: 410
     tip: >
-      finalized board layout of the chebyshev active filter.
+      Finalized board layout of the Chebyshev active filter.
   - file: chebyshev-pic01.png
     width: 800
     height: 584
     tip: >
-      the soldered and (kinda) cleaned chebyshev filter board.
+      The soldered and (kinda) cleaned Chebyshev filter board.
   - file: chebyshev-pic02.png
     width: 800
     height: 600
     tip: >
-      the chebyshev filter with attached power and signals. small! :)
+      The Chebyshev filter with attached power and signals. Small! :)
+imagesC:
   - file: chebyshev-response.png
     width: 800
     height: 397
     tip: >
-      comparison of the simulated and measured transfer functions using
-      spice and the usbtmc-bode program, based on the active chebyshev
+      Comparison of the simulated and measured transfer functions using
+      spice and the usbtmc-bode program, based on the active Chebyshev
       filter circuit.
+imagesD:
   - file: ina-pic01.png
     width: 800
     height: 580
     tip: >
-      instrumentation amplifier board, soldered up and connected into the
+      Instrumentation amplifier board, soldered up and connected into the
       measurement jig for analysis via usbtmc-bode.
   - file: ina-pic02.png
     width: 795
     height: 600
     tip: >
-      instrumentation amplifier board, completed and cleaned up.
+      Instrumentation amplifier board, completed and cleaned up.
   - file: ina-response.png
     width: 800
     height: 533
     tip: >
-      measured frequency/phase response of the instrumentation amplifier
+      Measured frequency/phase response of the instrumentation amplifier
       circuit.
 ---
 
@@ -85,7 +88,7 @@ measured response variables, I scripted it, as any programmer would.
 With the goal in mind, I wrote a simple
 [C](http://en.wikipedia.org/wiki/C_(programming_language)) program to [text
 message](http://en.wikipedia.org/wiki/Standard_Commands_for_Programmable_Instruments)
-with my Agilent MSO-X 2024A through the [ USB Test and
+with my Agilent MSO-X 2024A through the [USB Test and
 Measurement](http://www.home.agilent.com/upload/cmc_upload/All/usbtmc.htm)
 Linux kernel driver. The program runs fine in a
 [VirtualBox](https://www.virtualbox.org)'ed [Debian
@@ -107,7 +110,7 @@ filter on a breadboard, calculated its theoretical response, and then
 measured the true response of the circuit. The results are shown in the
 figure below:
 
-{% include gallery.html dir="usbtmc-bode" images=page.images %}
+{% include gallery.html dir="usbtmc-bode" images=page.imagesA %}
 
 # Active filter testing
 
@@ -116,7 +119,7 @@ Instruments' [FilterPro](http://www.ti.com/tool/filterpro) software to
 design an active 8<sup>th</sup> order Chebyshev bandpass filter around the
 Analog Devices OP462 quad opamp, as shown below:
 
-{% include gallery.html dir="usbtmc-bode" images=page.images %}
+{% include gallery.html dir="usbtmc-bode" images=page.imagesB %}
 
 I simulated the circuit in Berkeley SPICE and measured its response with
 usbtmc-bode. I caught a few small software bugs, but to no surprise, the
@@ -126,7 +129,7 @@ bandwidth of 3.7 kHz with -3 dB transitions around 500 Hz and 4 kHz, and the
 measurements showed a 3.63 kHz effective bandwidth and a similar passband
 frequency range. See for yourself below! **:)**
 
-{% include gallery.html dir="usbtmc-bode" images=page.images %}
+{% include gallery.html dir="usbtmc-bode" images=page.imagesC %}
 
 # Instrumentation amplifier
 
@@ -135,7 +138,7 @@ fixed-gain (66 dB) instrumentation amplifier to try usbtmc-bode on a high
 gain circuit. With a bit of tweaking of the parameters inside the source
 code, everything worked out just fine. Check out the measurements:
 
-{% include gallery.html dir="usbtmc-bode" images=page.images %}
+{% include gallery.html dir="usbtmc-bode" images=page.imagesD %}
 
 # Application video
 
@@ -146,5 +149,5 @@ code, everything worked out just fine. Check out the measurements:
 Of course, this page would be pretty useless without source code, huh?
 **:P**
 
- * [usbtmc-bode.tar.gz]({{site.db}}usbtmc-bode/usbtmc-bode.tar.gz)
+ * [Source tarball]({{site.db}}usbtmc-bode/usbtmc-bode.tgz)
 

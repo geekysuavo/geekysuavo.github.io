@@ -1,238 +1,245 @@
 ---
 permalink: /ppm/
-title: An open-source proton precession magnetometer
+title: PyPPM
 heading: An open-source proton precession magnetometer
 subheading: My adventures in the earth's magnetic field
 layout: project
 bar: top
-images:
+imagesA:
   - file: fil-schematic.png
     width: 776
     height: 600
     tip: >
-      final schematic of the FILv1r0 board as it was built and tested.
+      Final schematic of the FILv1r0 board as it was built and tested.
   - file: fil-layout.png
     width: 800
     height: 371
     tip: >
-      final layout of FILv1r0. the bulky SP-CAPs will be replaced with
+      Final layout of FILv1r0. the bulky SP-CAPs will be replaced with
       smaller 1206 tantalums!
   - file: fil-image01.png
     width: 800
     height: 584
     tip: >
-      a closeup of the FIL board with a 1.5v AA battery for size comparison.
+      A closeup of the FIL board with a 1.5v AA battery for size comparison.
   - file: fil-image02.png
     width: 800
     height: 600
     tip: >
-      the FIL board wired up and under test to generate a Bode plot.
+      The FIL board wired up and under test to generate a Bode plot.
   - file: fil-response.png
     width: 800
     height: 398
     tip: >
-      the predicted and measured responses of the filter match up quite
+      The predicted and measured responses of the filter match up quite
       well!
+imagesB:
   - file: ina-schematic.png
     width: 776
     height: 600
     tip: >
-      final schematic of the INAv1r0 board as it was built and tested.
+      Final schematic of the INAv1r0 board as it was built and tested.
   - file: ina-layout.png
     width: 800
     height: 400
     tip: >
-      final layout of INAv1r0. nothing special here, just an input filter
-      network and the ad8428 of course. the tantalums are still too big
+      Final layout of INAv1r0. nothing special here, just an input filter
+      network and the AD8428 of course. The tantalums are still too big
       here.
   - file: ina-image01.png
     width: 795
     height: 600
     tip: >
-      a closeup of the INA board with a 1.5v AA battery for size comparison.
-      i managed to get it a bit smaller than FIL!
+      A closeup of the INA board with a 1.5v AA battery for size comparison.
+      I managed to get it a bit smaller than FIL!
   - file: ina-image02.png
     width: 800
     height: 580
     tip: >
-      the lashup of INA used to measure its frequency response. not pictured
+      The lashup of INA used to measure its frequency response. Not pictured
       is an attenuation network preceeding the input to the board.
   - file: ina-response-a.png
     width: 800
     height: 399
     tip: >
-      the predicted and measured response of the amplifier are close until a
-      few hundred kHz. the bandwidth is far wider than needed. i am curious
+      The predicted and measured response of the amplifier are close until a
+      few hundred kHz. The bandwidth is far wider than needed. I am curious
       what the cause of that zero is.
   - file: ina-response-b.png
     width: 800
     height: 400
     tip: >
-      later revisions of the analog signal chain used a lower-bandwidth
+      Later revisions of the analog signal chain used a lower-bandwidth
       input filter, with a response like the one predicted and measured
       here.
+imagesC:
   - file: osc-schematic.png
     width: 776
     height: 600
     tip: >
-      final schematic of the OSCv1r0 board as it was built and tested.
+      Final schematic of the OSCv1r0 board as it was built and tested.
   - file: osc-layout.png
     width: 800
     height: 458
     tip: >
-      final layout of the OSC board. since the battery connections are
-      swappable, i can mount the 9v battery on the underside. sweet!
+      Final layout of the OSC board. Since the battery connections are
+      swappable, I can mount the 9v battery on the underside. Sweet!
   - file: osc-image01.png
     width: 800
     height: 600
     tip: >
-      the built up oscillator board. the switch footprint was a mismatch, so
-      i had to just jumper it closed. battery in, oscillator on.
+      the built up oscillator board. The switch footprint was a mismatch, so
+      I had to just jumper it closed. Battery in, oscillator on.
   - file: osc-response.png
     width: 800
     height: 533
     tip: >
-      the predicted and measured frequency domain outputs of the oscillator.
-      no signal averaging was used in measurement.
+      The predicted and measured frequency domain outputs of the oscillator.
+      No signal averaging was used in measurement.
+imagesD:
   - file: dig-schematic.png
     width: 776
     height: 600
     tip: >
-      final schematic of the DIGv1r0 board as it was built and tested.
+      Final schematic of the DIGv1r0 board as it was built and tested.
   - file: dig-layout.png
     width: 567
     height: 600
     tip: >
-      final board layout for DIGv1r0. again, the switch footprints failed to
-      match the parts, so i was reduced to shorting the pads with breadboard
-      jumpers. what a pain!
+      Final board layout for DIGv1r0. Again, the switch footprints failed to
+      match the parts, so I was reduced to shorting the pads with breadboard
+      jumpers. What a pain!
   - file: dig-image01.png
     width: 800
     height: 600
     tip: >
-      look at all that flux residue... time for an isopropanol bath! shown
+      Look at all that flux residue... ime for an isopropanol bath! Shown
       by a 1.5v AA battery.
   - file: dig-image02.png
     width: 800
     height: 600
     tip: >
-      the cleaned board nearing testing at my computer desk. the alligator
+      The cleaned board nearing testing at my computer desk. The alligator
       cables were used to feed a sinewave into the ADC from the
       oscilloscope.
   - file: dig-image03.png
     width: 800
     height: 600
     tip: >
-      can you tell which pins are SPI SCK, CS, and MISO? hint: i had to
+      Can you tell which pins are SPI SCK, CS, and MISO? hint: I had to
       probe them with sharp oscilloscope probe tips. <b>:)</b>
   - file: dig-floor.png
     width: 800
     height: 533
     tip: >
-      the signal-averaged noise floor of the ADC, with input shorted to
+      The signal-averaged noise floor of the ADC, with input shorted to
       ground. 64 transients of 16k points each were averaged, DC offset was
       removed, and a Blackman window function was applied prior to FFT.
   - file: dig-sin1k.png
     width: 800
     height: 533
     tip: >
-      single-shot capture of a 1.0 kHz sinewave from my DSO wavegen output.
-      the SNR is close to the theoretical maximum for a 16-bit ADC, and i
+      Single-shot capture of a 1.0 kHz sinewave from my DSO wavegen output.
+      The SNR is close to the theoretical maximum for a 16-bit ADC, and I
       anticipate the final design will come closer to reaching it.
+imagesE:
   - file: ppm-v1r1-schematic.png
     width: 776
     height: 600
     tip: >
-      final block diagram (first schematic page) of the PPMv1r1 board as it
+      Final block diagram (first schematic page) of the PPMv1r1 board as it
       was built and tested.
   - file: ppm-v1r1-layout.png
     width: 719
     height: 600
     tip: >
-      final board layout for PPMv1r1. this was my first four-layer board
-      design, and i have to say it was immeasurably simpler to lay out than
-      any other two-layer board i've done.
+      Final board layout for PPMv1r1. This was my first four-layer board
+      design, and I have to say it was immeasurably simpler to lay out than
+      any other two-layer board Ive done.
   - file: ppm-v1r1-image01.png
     width: 800
     height: 600
     tip: >
-      first revision assembled board, looking sexy under the ring-light.
+      First revision assembled board, looking sexy under the ring-light.
   - file: ppm-v1r1-image02.png
     width: 800
     height: 600
     tip: >
-      a face-on shot of the first revision magnetometer board.
+      A face-on shot of the first revision magnetometer board.
   - file: ppm-v1r1-image03.png
     width: 800
     height: 600
     tip: >
-      the first revision magnetometer board, striking a pose with usb cable,
+      The first revision magnetometer board, striking a pose with usb cable,
       footprint layout sheet and tweezers.
   - file: ppm-v1r1-image04.png
     width: 800
     height: 600
     tip: >
-      the closest thing you can get to an 'action shot' of the first
+      The closest thing you can get to an "action shot" of the first
       revision board.
+imagesF:
   - file: ppm-v1r1-ccs01.png
     width: 800
     height: 480
     tip: >
-      this capture shows a test mode of the current sink DAC output where
+      This capture shows a test mode of the current sink DAC output where
       all DAC codes are output in a triangular ramp, as rapidly as possible.
   - file: ppm-v1r1-ccs02.png
     width: 800
     height: 479
     tip: >
-      oscillations in the early current sink circuit, cut at points by relay
+      Oscillations in the early current sink circuit, cut at points by relay
       contact chatter.
   - file: ppm-v1r1-ccs03.png
     width: 800
     height: 480
     tip: >
-      a closer look at the current sink oscillations
+      A closer look at the current sink oscillations
   - file: ppm-v1r1-ccs04.png
     width: 800
     height: 480
     tip: >
-      it seemed as though the opamp could drive the mosfet up to a point,
+      It seemed as though the opamp could drive the mosfet up to a point,
       and then it just began to oscillate.
   - file: ppm-v1r1-ccs05.png
     width: 800
     height: 480
     tip: >
-      a frequency measurement of the current sink oscillations.
+      A frequency measurement of the current sink oscillations.
   - file: ppm-v1r1-ccs06.png
     width: 800
     height: 480
     tip: >
-      with the AD8541 in lieu of the AD8591, the situation was resolved.
+      With the AD8541 in lieu of the AD8591, the situation was resolved.
   - file: ppm-v1r1-ccs07.png
     width: 800
     height: 480
     tip: >
-      rise time measurement for a 1.0 A current pulse into a resistive load.
+      Rise time measurement for a 1.0 A current pulse into a resistive load.
   - file: ppm-v1r1-ccs08.png
     width: 800
     height: 480
     tip: >
-      fall time measurement for a 1.0 A current pulse into a resistive load.
+      Fall time measurement for a 1.0 A current pulse into a resistive load.
+imagesG:
   - file: ppm-v1r2-schematic.png
     width: 800
     height: 565
     tip: >
-      final block diagram (first schematic page) of the PPMv1r2 board as it
+      Final block diagram (first schematic page) of the PPMv1r2 board as it
       was built and tested.
   - file: ppm-v1r2-layout.png
     width: 719
     height: 600
     tip: >
-      final board layout for PPMv1r2.
+      Final board layout for PPMv1r2.
+imagesH:
   - file: ccscmp-v1r1-res-all.png
     width: 800
     height: 480
     tip: >
-      first revision current waveform with a 2-ohm resistive load.
+      First revision current waveform with a 2-ohm resistive load.
   - file: ccscmp-v1r1-res-end.png
     width: 800
     height: 480
@@ -243,109 +250,112 @@ images:
     width: 800
     height: 480
     tip: >
-      first revision current waveform with a 10 mH inductive load. the
+      First revision current waveform with a 10 mH inductive load. The
       flatness is due to saturation of the output MOSFET.
   - file: ccscmp-v1r1-ind-end.png
     width: 800
     height: 480
     tip: >
-      first revision current waveform with a 10 mH inductive load. the
+      First revision current waveform with a 10 mH inductive load. The
       flatness is due to saturation of the output MOSFET.
   - file: ccscmp-v1r2-res-all.png
     width: 800
     height: 480
     tip: >
-      second revision current waveform with a 2-ohm resistive load. no more
+      Second revision current waveform with a 2-ohm resistive load. No more
       HF oscillations!
   - file: ccscmp-v1r2-res-end.png
     width: 800
     height: 480
     tip: >
-      second revision current waveform with a 2-ohm resistive load.
+      Second revision current waveform with a 2-ohm resistive load.
   - file: ccscmp-v1r2-ind-all.png
     width: 800
     height: 480
     tip: >
-      second revision current waveform with a 10 mH inductive load.
+      Second revision current waveform with a 10 mH inductive load.
   - file: ccscmp-v1r2-ind-end.png
     width: 800
     height: 480
     tip: >
-      second revision current waveform with a 10 mH inductive load, showing
+      Second revision current waveform with a 10 mH inductive load, showing
       the critical fall-time.
+imagesI:
   - file: ppm-v1r3-schematic.png
     width: 776
     height: 600
     tip: >
-      final block diagram (first schematic page) of the PPMv1r3 board as it
+      Final block diagram (first schematic page) of the PPMv1r3 board as it
       was built and tested.
   - file: ppm-v1r3-layout.png
     width: 719
     height: 600
     tip: >
-      final board layout for PPMv1r3.
+      Final board layout for PPMv1r3.
+imagesJ:
   - file: ppm-v1r3-image01.png
     width: 800
     height: 600
     tip: >
-      beer and soldering fumes: a winning combination!
+      Beer and soldering fumes: a winning combination!
   - file: ppm-v1r3-image02.png
     width: 800
     height: 600
     tip: >
-      the third-revision board, assembled and resting comfortably in its
+      The third-revision board, assembled and resting comfortably in its
       case.
   - file: ppm-v1r3-image03.png
     width: 800
     height: 600
     tip: >
-      i found an un-developed field within a reasonable distance from my
+      I found an un-developed field within a reasonable distance from my
       place, so a few tests were conducted out there to ensure minimal
       interference and maximal homogeneity.
   - file: ppm-v1r3-image04.png
     width: 800
     height: 444
     tip: >
-      the very first precession signal acquired using the device. this took
+      The very first precession signal acquired using the device. This took
       45 minutes (128 signal averages) in the basement of my chemistry
       building.
   - file: ppm-v1r3-image05.png
     width: 800
     height: 446
     tip: >
-      the second precession signal acquired using the device, with a bit of
-      digital retouching (removal of noise background). this was acquired in
+      The second precession signal acquired using the device, with a bit of
+      digital retouching (removal of noise background). This was acquired in
       32 scans.
+imagesK:
   - file: backspin-init.png
     width: 800
     height: 528
     tip: >
-      the user first has to connect the device and initialize communication
-      with 'ii' in the bottom command bar.
+      The user first has to connect the device and initialize communication
+      with ii in the bottom command bar.
   - file: backspin-par.png
     width: 800
     height: 528
     tip: >
-      acquisition parameters appear that allow the user to tune up every
-      little detail of the earth's field NMR experiment. to change a
-      parameter, you just type 'sn 16384' (or similar) in the command bar.
+      Acquisition parameters appear that allow the user to tune up every
+      little detail of the earths field NMR experiment. To change a
+      parameter, you just type sn 16384 (or similar) in the command bar.
   - file: backspin-acq.png
     width: 800
     height: 528
     tip: >
-      acquisition starts when 'zg' is run and finishes with a plot of the
-      acquired time-domain data. this is an example of leaving the amplifier
+      Acquisition starts when zg is run and finishes with a plot of the
+      acquired time-domain data. This is an example of leaving the amplifier
       input floating without a BNC terminator. <b>:)</b>
   - file: backspin-ft.png
     width: 800
     height: 528
     tip: >
-      fourier transformation of the time-domain data yields a spectrum.
+      Fourier transformation of the time-domain data yields a spectrum.
   - file: backspin-wfp.png
     width: 800
     height: 528
     tip: >
-      short-time fourier transformation via 'wfp' yields a spectral
+      Short-time fourier transformation via wfp yields a spectral
       waterfall of the acquisition, which is helpful for discerning
       exponentially decaying precession signals from continuous sources of
       interference.
@@ -363,10 +373,10 @@ Of course, my level of understanding when it comes to circuits is not
 **_yet_** advanced enough to tackle a full pulsed NMR design. I figured I'd
 give myself a simpler challenge: a proton precession magnetometer.
 
-** I absolutely could not have achieved success in this project without the
+**I absolutely could not have achieved success in this project without the
 insight, guidance, support and encouragement offered by [Joe
 Geller](mailto:joegeller@gellerlabs.com) at [Geller
-Labs](http://www.gellerlabs.com). ** Thanks Joe!
+Labs](http://www.gellerlabs.com).** Thanks Joe!
 
 # The science
 
@@ -392,8 +402,8 @@ entire process is described a bit more completely by the phenomenological
 
 # The engineering
 
-Solution of the Bloch equations for the <a
-href='http://en.wikipedia.org/wiki/Earth's_magnetic_field'>Earth's field</a>
+Solution of the Bloch equations for the [Earth's field](
+http://en.wikipedia.org/wiki/Earths_magnetic_field)
 along _z_ and the polarizing field along _x_ yields a situation in which the
 same solenoid used to generated the polarizing field may be utilized to
 detect the precession signal as it swings through the _xy_ plane. Thus, a
@@ -433,7 +443,7 @@ field (as measured through the proton gyromagnetic ratio) that can range
 from 11.75 to 93.95 microtesla and remain detectable, far outside the
 typical values for earth's field.
 
-{% include gallery.html dir="ppm" images=page.images %}
+{% include gallery.html dir="ppm" images=page.imagesA %}
 
 # INA: Preamplifier
 
@@ -445,7 +455,7 @@ amplifiers put out by Analog Devices and Linear Technology, I was able to
 incorporate a functional differential filter into the design to limit any RF
 interference that could try and creep in. And it worked!
 
-{% include gallery.html dir="ppm" images=page.images %}
+{% include gallery.html dir="ppm" images=page.imagesB %}
 
 # OSC: Test oscillator
 
@@ -455,7 +465,7 @@ sine wave at 10 microvolts, but the output voltage ended up around six times
 that. Good enough. I have plenty of inline attenuators that can kick that
 down plenty.
 
-{% include gallery.html dir="ppm" images=page.images %}
+{% include gallery.html dir="ppm" images=page.imagesC %}
 
 # DIG: Digitizer
 
@@ -474,7 +484,7 @@ I did change a significant amount of the code to make it more readable and
 understandable...)_ The end result was a USB device that you could 'cat' and
 get a timed binary dump of ADC register values from. Neat!
 
-{% include gallery.html dir="ppm" images=page.images %}
+{% include gallery.html dir="ppm" images=page.imagesD %}
 
 # PPM: First revision
 
@@ -485,7 +495,7 @@ impatient, so I chose the latter. I got a bit lucky. After swapping out the
 current sink driver opamp to a slower chip, the whole board was completely
 functional!
 
-{% include gallery.html dir="ppm" images=page.images %}
+{% include gallery.html dir="ppm" images=page.imagesE %}
 
 The sensor coil current sink did prove to be a bit touchier than I expected.
 I had originally designed in an AD8591 3 MHz 250 mA rail-to-rail opamp into
@@ -496,7 +506,7 @@ Swapping the AD8591 with the AD8541 1 MHz opamp and upping the compensation
 capacitor to 10 nF quenched the oscillations with a resistive load and the
 sensor coil, so I went with that.
 
-{% include gallery.html dir="ppm" images=page.images %}
+{% include gallery.html dir="ppm" images=page.imagesF %}
 
 # PPM: Second revision
 
@@ -508,10 +518,10 @@ version, with the only major changes being:
  * Current sink AD8591 replaced with AD8541
  * Added FET gate resistor to current sink
  * Increased size of capacitor in CCS feedback
- * Added FET gate pull-down resistor to REL_EN
+ * Added FET gate pull-down resistor to RELEN
  * Added a third LED indicator, because why not?
 
-{% include gallery.html dir="ppm" images=page.images %}
+{% include gallery.html dir="ppm" images=page.imagesG %}
 
 Of course, I wish I'd tested the current sink with the actual sensor coil
 before finalizing the second revision, because the behaviour changes wildly
@@ -519,7 +529,7 @@ between a resistive load and an inductive one. I learned that the hard way,
 and ended up having to go back to compare polarization waveforms for both
 versions, shown below:
 
-{% include gallery.html dir="ppm" images=page.images %}
+{% include gallery.html dir="ppm" images=page.imagesH %}
 
 The final verdict from these comparisons was that placing a huge inductor
 inside the feedback path of a current-boosted opamp was probably a poor
@@ -540,7 +550,7 @@ A less serious revision involved a lowering of the input instrumentation
 amplifier's 3 dB rolloff from 300 kHz to 15 kHz in an attempt to further
 reduce high-frequency noise and aliasing in the input signal chain.
 
-{% include gallery.html dir="ppm" images=page.images %}
+{% include gallery.html dir="ppm" images=page.imagesI %}
 
 Lo and behold, the third time was a charm! After several trials with the new
 board (including realizing I had forgotten to fill the coil with that magic
@@ -549,7 +559,7 @@ chemistry building at UNL. Subsequent tests in a more remote region of
 Nebraska resulted in a sharper, more intense line: confirmation that the
 magnetometer **works**.
 
-{% include gallery.html dir="ppm" images=page.images %}
+{% include gallery.html dir="ppm" images=page.imagesJ %}
 
 # The CLI software
 
@@ -574,14 +584,14 @@ kS/s, a 10-millisecond dead time before and after polarization, and a 1-amp
 coil polarization current:
 
 ```
-[b][prompt] rpar[/b]
+rpar
 RPAR: 62 800 16384 25 25 16 OK
-[b][prompt] wpar 306 800 32768 400 400 2048[/b]
+wpar 306 800 32768 400 400 2048
 WPAR: OK
-[b][prompt] zg 4[/b]
+zg 4
 RPAR: 306 800 32768 400 400 128 OK
 ZG: POL ACQ POL ACQ POL ACQ POL ACQ OK
-[b][prompt] awk 'END {print NR, NF}' fid[/b]
+awk 'END {print NR, NF}' fid
 32768 2
 ```
 
@@ -590,17 +600,16 @@ values and wrote a few helper functions to convert to and from human-
 readable versions of the PPM parameters, like so:
 
 ```
-[b][prompt] wparh 10 22.05 32768 1 10 0.5[/b]
+wparh 10 22.05 32768 1 10 0.5
 WPAR: OK
-[b][prompt] rparh[/b]
+rparh
 RPAR: 610 726 32768 40 400 1024 OK
-
-  Polarization time     9.994 s
-  Acquisition rate      22.039 kS/s
-  Sample points         32768
-  Polarization deadtime 1.000 ms
-  Acquisition deadtime  10.000 ms
-  Polarization current  0.500 A
+Polarization time     9.994 s
+Acquisition rate      22.039 kS/s
+Sample points         32768
+Polarization deadtime 1.000 ms
+Acquisition deadtime  10.000 ms
+Polarization current  0.500 A
 ```
 
 Conversion into the frequency domain was the next software design target, so
@@ -611,9 +620,9 @@ calculates a Short-Time Fourier Transform 'waterfall' from the data. Once an
 acquisition is complete, running them is as easy as:
 
 ```
-[b][prompt] ft[/b]
-[b][prompt] wfp[/b]
-[b][prompt] hrft 950 1050[/b]
+ft
+wfp
+hrft 950 1050
 ```
 
 Finally, if the **wparh** statement above didn't give you the hint, there is
@@ -625,13 +634,13 @@ Once I had a first complete prototype PPM board, I quickly became frustrated
 with having to run a shell command to acquire and then jump into gnuplot for
 visualization. It was time for a graphical interface to the device.
 
-May I present **backspin**. It's really just a quick hack in GTK+-3.0 that
+May I present **backspin**. It's really just a quick hack in GTK3 that
 ties into the API I had already written for the CLI utilities and provides a
 snazzy way of visualizing acquired and transformed data without tabbing
 between a ton of windows. The following images detail a typical progression
 through the **backspin** program:
 
-{% include gallery.html dir="ppm" images=page.images %}
+{% include gallery.html dir="ppm" images=page.imagesK %}
 
 # The Python API
 
@@ -643,7 +652,7 @@ magnetometer from inside the Python scripting language.
 For example, here's the Python code for acquiring and plotting an acquired
 spectrum:
 
-```
+```python
 import pyppm
 import numpy as np
 import matplotlib.pyplot as plt

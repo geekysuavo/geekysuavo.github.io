@@ -9,8 +9,10 @@ db: "https://dl.dropboxusercontent.com/u/49207495/website/"
 github_username:  geekysuavo
 
 # build settings
-markdown: kramdown
 highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
 
 # excluded files
 exclude: [README.md, Makefile]

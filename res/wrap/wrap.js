@@ -179,7 +179,7 @@ function completeTables () {
     }
     else if (fields[2] == "r") {
       /* reset the subtotal. */
-      cells[i].innerHTML = subtotal.toFixed(2);
+      cells[i].innerHTML = '<strong>' + subtotal.toFixed(2) + '</strong>';
       subtotal = 0.0;
     }
   }
