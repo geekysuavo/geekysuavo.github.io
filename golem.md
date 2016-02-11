@@ -5,100 +5,103 @@ heading: What's he got in his pocketses, precious?
 subheading: A guitar amp from the ashes of an oscilloscope
 layout: project
 bar: top
-images:
+imagesA:
   - file: supply.png
     width: 800
     height: 420
     tip: >
-      a generic tube-based tube amp power supply. crc smoothing and ac
-      heaters. easy peasy.
+      A generic tube-based tube amp power supply. CRC smoothing and AC
+      heaters. Easy peasy.
+imagesB:
   - file: preamp.png
     width: 800
     height: 373
     tip: >
-      the preamplifier. again, more of the same, a hodge-podge of stages...
+      The preamplifier. Again, more of the same, a hodge-podge of stages...
+imagesC:
   - file: poweramp.png
     width: 794
     height: 600
     tip: >
-      the single-ended el34 power output stage. this bad boy should give
+      The single-ended EL34 power output stage. This bad boy should give
       some good old-fashioned kick!
+imagesD:
   - file: pic01.png
     width: 640
     height: 480
     tip: >
-      the guts of the old oscilloscope. amazingly barren construction. i
-      know the whole miniaturization fad didn't kick in until later, but
+      The guts of the old oscilloscope. Amazingly barren construction. I
+      know the whole miniaturization fad didnt kick in until later, but
       come on...
   - file: pic02.png
     width: 640
     height: 480
     tip: >
-      after fifty or so years of collecting dust, this thing fires up
+      After fifty or so years of collecting dust, this thing fires up
       without any hiccups, and starts working just as it did so long ago.
-      a-freaking-mazing.
+      A-freaking-mazing.
   - file: pic03.png
     width: 640
     height: 480
     tip: >
-      mains hum, picked up and amplified for the world to see. :P
+      Mains hum, picked up and amplified for the world to see.
   - file: pic04.png
     width: 640
     height: 480
     tip: >
-      the utilitarian front-panel of the oscilloscope.
+      The utilitarian front-panel of the oscilloscope.
   - file: pic05.png
     width: 800
     height: 600
     tip: >
-      ok, the case has sort of come together. needs more work in this photo.
-      as you can see i've kept my word, and i'm even using the original
+      OK, the case has sort of come together. Needs more work in this photo.
+      as you can see Ive kept my word, and Im even using the original
       power trafo to make the HT voltage.
   - file: pic06.png
     width: 800
     height: 600
     tip: >
-      front-panel, almost done.
+      Front-panel, almost done.
   - file: pic07.png
     width: 800
     height: 600
     tip: >
-      yet more work on the completed front panel and the first tube socket.
+      Yet more work on the completed front panel and the first tube socket.
   - file: pic08.png
     width: 800
     height: 600
     tip: >
-      test run numero uno, lights on. nothing's exploding, which is good.
+      Test run numero uno, lights on. Nothing exploded, which is good.
   - file: pic09.png
     width: 800
     height: 600
     tip: >
-      lights off, so you can see the tube heaters glowing. :)
+      Lights off, so you can see the tube heaters glowing. :)
   - file: pic10.png
     width: 800
     height: 600
     tip: >
-      more power supply and preamp wiring.
+      More power supply and preamp wiring.
   - file: pic11.png
     width: 800
     height: 600
     tip: >
-      yet more wiring...
+      Still more wiring...
   - file: pic12.png
     width: 800
     height: 600
     tip: >
-      here, everything's almost complete, except for the power stage wiring.
+      Here, everything is almost complete, except for the power stage wiring.
   - file: pic13.png
     width: 800
     height: 600
     tip: >
-      the test rig setup was an 8-ohm dummy resistor load. pretty basic.
+      The test rig setup was an 8-ohm dummy resistor load. pretty basic.
   - file: pic14.png
     width: 800
     height: 600
     tip: >
-      the finalized amp, showing signs of life with a nicely distorted
+      The finalized amp, showing signs of life with a nicely distorted
       signal on the output and such a wonderful amount of excess heat!
 ---
 
@@ -124,7 +127,7 @@ from ground to try and reduce hum. The circuit produces up to 450
 V<sub>dc</sub>, but is designed for 325 V<sub>dc</sub> under normal load
 conditions.
 
-{% include gallery.html dir="golem" images=page.images %}
+{% include gallery.html dir="golem" images=page.imagesA %}
 
 # Preamplifier
 
@@ -136,7 +139,7 @@ is used in a cathode follower configuration whose output is fed to a 12AU7
 with both triode sections wired in parallel for low output resistance and
 softer gain.
 
-{% include gallery.html dir="golem" images=page.images %}
+{% include gallery.html dir="golem" images=page.imagesB %}
 
 # Power amplifier
 
@@ -147,12 +150,12 @@ tubes in the amplifier are cathode-biased.) single-ended reactively loaded
 so I redesigned around an EL34, which is popular and relatively cheap. The
 EL34 is the only component of the amp not pulled from the old Eico scope!
 
-{% include gallery.html dir="golem" images=page.images %}
+{% include gallery.html dir="golem" images=page.imagesC %}
 
 # Construction photos
 
 Here are some pictures of the slow by steady progress I've made since
 finding the scope in my Grandpa's garage...
 
-{% include gallery.html dir="golem" images=page.images %}
+{% include gallery.html dir="golem" images=page.imagesD %}
 
