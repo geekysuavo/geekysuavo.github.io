@@ -10,14 +10,14 @@ images:
     width: 800
     height: 488
     tip: >
-      an example PCA scores plot rendered from generated scores data.
+      An example PCA scores plot rendered from generated scores data.
       confidence ellipses show alpha=0.05.
   - file: beatles-tree.png
     width: 800
     height: 421
     tip: >
-      dendrogram of the PCA scores. boostrap numbers on the branches are
-      based on 1000 iterations. alternatively, p-values can be reported on
+      Dendrogram of the PCA scores. boostrap numbers on the branches are
+      based on 1000 iterations. Alternatively, p-values can be reported on
       the branches based on mahalanobis distances.
 ---
 
@@ -70,5 +70,5 @@ Of course, this page would be pretty useless without source code, huh?
 **:P** I'll throw in a PDF of the original paper while I'm at it.
 
  * [GitHub repository](http://github.com/geekysuavo/pca-utils)
- * [bworley-2013.pdf]({{site.db}}pca-utils/bworley-2013.pdf)
+ * [Publication on pca-utils]({{site.db}}pca-utils/bworley-2013.pdf)
 

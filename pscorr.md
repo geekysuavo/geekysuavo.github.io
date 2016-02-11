@@ -10,7 +10,7 @@ images:
     width: 800
     height: 250
     tip: >
-      monte carlo statistics for (a) dilution factor recovery error, (b) PCA
+      Monte carlo statistics for (a) dilution factor recovery error, (b) PCA
       cluster quality, and (c) loading divergence angle over various phase
       errors
 ---
@@ -51,9 +51,9 @@ and HM/PQ provide better normalization factor estimates.
 # The code
 
 The **pscorr** algorithm is standalone code, but is available as part of the
-MVAPACK toolbox. You can get it on [the MVAPACK page](/mvapack). You can
-read more about PSC in the following papers:
+MVAPACK toolbox. You can get it on [the MVAPACK page]({{site.url}}/mvapack).
+You can read more about PSC in the following papers:
 
- * [bworley-2014.pdf]({{site.db}}pscorr/bworley-2014.pdf)
- * [bworley-2015.pdf]({{site.db}}pscorr/bworley-2015.pdf)
+ * [Publication on PSC]({{site.db}}pscorr/bworley-2014.pdf)
+ * [Publication on USSR]({{site.db}}pscorr/bworley-2015.pdf)
 
