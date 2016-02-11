@@ -166,7 +166,8 @@ function completeTables () {
   /* loop over each tag. */
   for (var i = 0; i < cells.length; i++) {
     /* extract the bits of information from the cell. */
-    var fields = cells[i].innerHTML.split(',');
+    var tokens = cells[i].innerHTML.split(' ');
+    var fields = tokens[1].split(',');
 
     /* update the subtotal variable. */
     var price = fields[0] * fields[1];

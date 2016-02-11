@@ -5,7 +5,7 @@ layout: listing
 bar: top
 projects:
   - link: nusutils
-    caption: Deterministic nonuniform sampling
+    caption: Seed-independent nonuniform sampling
     content: >
       The acquisition of sparsely sampled time-domain data in NMR
       spectroscopy is becoming more and more popular, but most techniques
