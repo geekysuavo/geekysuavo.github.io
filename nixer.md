@@ -277,7 +277,7 @@ AVR micros. avrdude commands are already available through the Makefile
 included. The gerber zipfile is ready for sending to BatchPCB, if you're
 interested.
 
- * [nixer.tar.bz2]({{site.db}}nixer/nixer.tbz2)
+ * [nixer.tbz2]({{site.db}}nixer/nixer.tbz2)
  * [gerber.zip]({{site.db}}nixer/gerber.zip)
 
 # Mainboard materials
@@ -310,7 +310,7 @@ Here are the designs for the power supply board of Nixer:
 
 Again, the code is in C. Nothing special going on here...
 
- * [smps.tar.bz2]({{site.db}}nixer/smps.tbz2)
+ * [smps.tbz2]({{site.db}}nixer/smps.tbz2)
 
 # Boost converter materials
 
