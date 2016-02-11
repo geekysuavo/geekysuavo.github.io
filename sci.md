@@ -4,7 +4,7 @@ heading: My research projects
 layout: listing
 bar: top
 projects:
-  - link: dgs
+  - link: nusutils
     caption: Deterministic nonuniform sampling
     content: >
       The acquisition of sparsely sampled time-domain data in NMR

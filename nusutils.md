@@ -1,7 +1,7 @@
 ---
-permalink: /dgs/
-title: Deterministic Nonuniform Gap Sampling
-heading: Deterministic Nonuniform Gap Sampling
+permalink: /nusutils/
+title: Deterministic Nonuniform Sampling
+heading: Deterministic Nonuniform Sampling
 subheading: A general framework for sparse sampling
 layout: project
 bar: top
@@ -41,7 +41,7 @@ data point in the current trace by a simple recurrence relation:
 
 {% include equation.html id="01" %}
 
-where g(x<sub>i</sub>) is referred to as a 'gap equation'. Multidimensional
+where _g(x<sub>i</sub>)_ is referred to as a 'gap equation'. Multidimensional
 gap sampling schedules are built up recursively from lower-dimensional
 sub-schedules according to the above relation. The popular Poisson-gap
 method obeys a stochastic gap equation by drawing from a Poisson
@@ -71,13 +71,14 @@ Poisson-gap sampling. This is a first for deterministic sampling methods,
 which have until now been regarded as inferior to pseudorandomly sampled
 methods.
 
-{% include gallery.html dir="dgs" images=page.images %}
+{% include gallery.html dir="nusutils" images=page.images %}
 
 # The code
 
-The **gaputil** program is fairly portable C, but requires Julia for gap
+The **nusutils** programs are all fairly portable C, but require Julia for
 equation interpretation. It's hosted on GitHub. Once the paper is published,
 I'll certainly post it here.
 
- * [GitHub repository](http://github.com/geekysuavo/gaputil)
+ * [GitHub repository](http://github.com/geekysuavo/nusutils)
+ * [Paper on gap sampling]({{site.db}}nusutils/bworley-2015.pdf)
 
