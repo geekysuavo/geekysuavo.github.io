@@ -7,6 +7,8 @@ EQ+= orbitals/04 orbitals/05 orbitals/06
 
 EQ+= bezier/01
 
+EQ+= ppm/01 ppm/02
+
 PNG=$(addsuffix .png,$(EQ))
 
 .SUFFIXES: .tex .png

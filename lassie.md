@@ -5,7 +5,7 @@ heading: My take on the Szekeres Class-A amplifier
 subheading: Subtle tweaks and a really nice enclosure
 layout: project
 bar: top
-images:
+imagesA:
   - file: ampA-sch.png
     width: 800
     height: 600
@@ -23,6 +23,7 @@ images:
     tip: >
       the bottom copper image of the first revision board design. don't use
       this in new designs, a better version exists.
+imagesB:
   - file: ampB-sch.png
     width: 800
     height: 600
@@ -41,6 +42,7 @@ images:
     height: 600
     tip: >
       the bottom copper image of the second revision board design.
+imagesC:
   - file: diff-resp.png
     width: 424
     height: 600
@@ -52,6 +54,7 @@ images:
     height: 565
     tip: >
       the transient at 1kHz of the vanilla szekeres and my version.
+imagesD:
   - file: psu-sch.png
     width: 800
     height: 600
@@ -70,6 +73,7 @@ images:
     height: 373
     tip: >
       the bottom copper image of the power supply board design.
+imagesE:
   - file: amp-pic01.png
     width: 800
     height: 600
@@ -128,6 +132,7 @@ images:
     tip: >
       the completed and connected amplifier and power supply, ready for the
       first ever listening test with everything buttoned up!
+imagesF:
   - file: case-pic01.png
     width: 800
     height: 600
@@ -192,6 +197,7 @@ images:
     height: 600
     tip: >
       the side panels, with a bit of room milled out for safe measure...
+imagesG:
   - file: psu-pic01.png
     width: 800
     height: 600
@@ -380,7 +386,7 @@ partsB:
 # Introduction
 
 It had been on my wish list for some time to build a MOSFET amplifier for a
-pair of decent quality low-impedance (50 ohm or so) headphones, and [ this
+pair of decent quality low-impedance (50 ohm or so) headphones, and [this
 circuit](http://diyaudioprojects.com/Solid/IRF610-Class-A-Headphone-Amp)
 finally came along and spurred me into action. I did a quick test-run on a
 breadboard to gain familiarity with the topology and circuit fundamentals
@@ -395,7 +401,7 @@ gschem and PCB were used to make the circuit schematic and printed circuit
 board layout. I also used Berkeley SPICE for the first time to estimate the
 circuit performance. Pictures of the first circuit design follow:
 
-{% include gallery.html dir="lassie" images=page.images %}
+{% include gallery.html dir="lassie" images=page.imagesA %}
 
 # Second design
 
@@ -407,7 +413,7 @@ increased the input AC coupling capacitor from 1.0 uF to 3.3 uF, and I
 increased the output AC coupling capacitor from 470 uF to 4700 uF. And of
 course, the pictures:
 
-{% include gallery.html dir="lassie" images=page.images %}
+{% include gallery.html dir="lassie" images=page.imagesB %}
 
 In order to try and quantify the effects that my modifications had on the
 performance, I used some bash scripts and gnuplot to compare the SPICE
@@ -417,7 +423,7 @@ improved. **:)** (_Trust me, I don't claim to be the first one to make these
 changes, but the circuit feels more like my baby now, if that makes any
 sense..._) The comparison results:
 
-{% include gallery.html dir="lassie" images=page.images %}
+{% include gallery.html dir="lassie" images=page.imagesC %}
 
 # Amplifier materials
 
@@ -435,7 +441,7 @@ amplifiers is a low-noise power supply, as they have zero PSRR. taking cues
 from gainclone and Morgan Jones' supplies, as well as some scraps of
 experience, I put together a basic regulated power supply:
 
-{% include gallery.html dir="lassie" images=page.images %}
+{% include gallery.html dir="lassie" images=page.imagesD %}
 
 # Power supply materials
 
@@ -520,7 +526,7 @@ new Sennheiser HD595 phones for the real tests. Honestly, the combined amp
 and phones sounded beyond amazing. It felt as though someone had taken hold
 of the left side of the frequency response curve and ripped it off. Bass was
 stronger and more tightly controlled, mids were warm and clean, and highs
-were defined without being too bright. I know the topology isnt for
+were defined without being too bright. I know the topology isn't for
 everybody, and it isnt the lowest distortion out there, but the sound, in my
 humble opinion, is wonderful.
 
@@ -530,7 +536,7 @@ But then again, I'm biased. **;)**
 
 Some pictures to prove the amplifier exists and works! **:)**
 
-{% include gallery.html dir="lassie" images=page.images %}
+{% include gallery.html dir="lassie" images=page.imagesE %}
 
 # Enclosure pictures
 
@@ -538,7 +544,7 @@ Some pictures of the enclosure I built from scratch for the amplifier,
 thanks to the patient instruction of Scott in the Texas Tech Chemistry
 department machine shop.
 
-{% include gallery.html dir="lassie" images=page.images %}
+{% include gallery.html dir="lassie" images=page.imagesF %}
 
 # Power supply pictures
 
@@ -546,5 +552,5 @@ Some pictures of the power supply and its enclosure I built for the Lassie
 amplifier. I had to match the beauty of the amplifier itself, so yet another
 aluminum-and-oak enclosure had to be fashioned for the supply too.
 
-{% include gallery.html dir="lassie" images=page.images %}
+{% include gallery.html dir="lassie" images=page.imagesG %}
 

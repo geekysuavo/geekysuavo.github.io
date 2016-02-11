@@ -145,7 +145,7 @@ function completeSidebar () {
     /* build a link string from the tag id. */
     var headId = heads[i].id.split('-').join(' ');
     var headStr = '<a href="#" onclick="scrollToId(\'' +
-                  headId + '\'); return false;">' +
+                  heads[i].id + '\'); return false;">' +
                   '<p class="seclink">' + headId + '</p></a>';
 
     /* add the link string to the final string. */
