@@ -365,6 +365,14 @@ h1 {
   margin-top: 40px;
 }
 
+h2 {
+  font-family: gsSansSerifRegular;
+  font-style: italic;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
 p.seclink {
   font-family: gsSansSerifRegular;
   font-size: 12px;
