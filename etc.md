@@ -20,5 +20,5 @@ bar: top
  * [IP Structural Bioinformatics](http://www.pasteur.fr/recherche/unites/Binfs)
  * [UNL Chemistry RIF](http://chem.unl.edu/nmr/index.shtml)
  * [Dr. Robert Powers](http://bionmr.unl.edu)
- * [Dr. Edward Quitevis](http://courses.ttu.edu/equitevi/quitevis_group)
+ * [Dr. Edward L. Quitevis](http://www.depts.ttu.edu/chemistry/Faculty/quitevis/group.php)
 
