@@ -176,7 +176,7 @@ imagesE:
     width: 800
     height: 600
     tip: >
-      The closest thing you can get to an "action shot" of the first
+      The closest thing you can get to an action shot of the first
       revision board.
 imagesF:
   - file: ppm-v1r1-ccs01.png
