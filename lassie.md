@@ -10,234 +10,234 @@ imagesA:
     width: 800
     height: 600
     tip: >
-      the quite-famous szekeres amplifier schematic, as you can see.
+      The quite-famous Szekeres amplifier schematic, as you can see.
   - file: ampA-lay.png
     width: 400
     height: 600
     tip: >
-      my layout for the first revision design. the TO-220 active devices
+      My layout for the first revision design. The TO-220 active devices
       actually lie flat and mount to the case, but this is not shown here.
   - file: ampA-bot.png
     width: 400
     height: 600
     tip: >
-      the bottom copper image of the first revision board design. don't use
+      The bottom copper image of the first revision board design. Dont use
       this in new designs, a better version exists.
 imagesB:
   - file: ampB-sch.png
     width: 800
     height: 600
     tip: >
-      my modified szekeres amplifier, still with the constant-current source
+      My modified Szekeres amplifier, still with the constant-current source
       as a load to the mosfet source.
   - file: ampB-lay.png
     width: 469
     height: 600
     tip: >
-      my layout for the first second design. again the TO-220 actives lay
+      My layout for the first second design. Again the TO-220 actives lay
       flat. instead of being square, the board is L-shaped, with a cutout
       where the huge electrolytic lays down.
   - file: ampB-bot.png
     width: 469
     height: 600
     tip: >
-      the bottom copper image of the second revision board design.
+      The bottom copper image of the second revision board design.
 imagesC:
   - file: diff-resp.png
     width: 424
     height: 600
     tip: >
-      the frequency and phase responses of the vanilla szekeres and my
+      The frequency and phase responses of the vanilla Szekeres and my
       version.
   - file: diff-tran.png
     width: 800
     height: 565
     tip: >
-      the transient at 1kHz of the vanilla szekeres and my version.
+      The transient at 1kHz of the vanilla Szekeres and my version.
 imagesD:
   - file: psu-sch.png
     width: 800
     height: 600
     tip: >
-      a basic CLC-smoothed and regulated 15V/3A DC supply for the amplifier.
+      A basic CLC-smoothed and regulated 15V/3A DC supply for the amplifier.
   - file: psu-lay.png
     width: 800
     height: 373
     tip: >
-      my layout for the power supply. i put thought into the enclosure
+      My layout for the power supply. I put thought into the enclosure
       design long before making this, so mount holes were really a
-      no-brainer. even still, you'll see i had to hack the board to get it
+      no-brainer. even still, youll see I had to hack the board to get it
       to fit...
   - file: psu-bot.png
     width: 800
     height: 373
     tip: >
-      the bottom copper image of the power supply board design.
+      The bottom copper image of the power supply board design.
 imagesE:
   - file: amp-pic01.png
     width: 800
     height: 600
     tip: >
-      feels like christmas!!! :P
+      Feels like christmas!!! :P
   - file: amp-pic02.png
     width: 800
     height: 600
     tip: >
-      the parts bin and transparencies.
+      The parts bin and transparencies.
   - file: amp-pic03.png
     width: 800
     height: 600
     tip: >
-      a closer look at how i epoxied two transparencies together to produce
-      finer traces on the circuit boards. line up the two sheets well!
+      A closer look at how I epoxied two transparencies together to produce
+      finer traces on the circuit boards. Line up the two sheets well!
   - file: amp-pic04.png
     width: 800
     height: 600
     tip: >
-      the first revision etched circuit board, ready for drilling and
+      The first revision etched circuit board, ready for drilling and
       cutting.
   - file: amp-pic05.png
     width: 800
     height: 600
     tip: >
-      the final cut first revision boards. a bandsaw worked beautifully to
+      The final cut first revision boards. A bandsaw worked beautifully to
       cut these boards, without any removal of copper or required sanding.
   - file: amp-pic06.png
     width: 800
     height: 600
     tip: >
-      the first test jig, with the amplifier sitting on top of the case for
+      The first test jig, with the amplifier sitting on top of the case for
       heat sinking. you see the input and output signals on the scope.
   - file: amp-pic07.png
     width: 800
     height: 600
     tip: >
-      a shot of the first revision amp output when driven to clipping. you
+      A shot of the first revision amp output when driven to clipping. You
       can see that, at the onset of clipping, the peaks are clipped
       asymmetrically, which means second-harmonic distortion, mostly.
   - file: amp-pic08.png
     width: 800
     height: 600
     tip: >
-      the two finished first revision boards, sitting on some scrap oak.
+      The two finished first revision boards, sitting on some scrap oak.
   - file: amp-pic09.png
     width: 800
     height: 600
     tip: >
-      a comparison of the original szekeres design to my modified design.
+      A comparison of the original szekeres design to my modified design.
       not too different, just some honkin huge caps...
   - file: amp-pic10.png
     width: 800
     height: 600
     tip: >
-      the completed and connected amplifier and power supply, ready for the
+      The completed and connected amplifier and power supply, ready for the
       first ever listening test with everything buttoned up!
 imagesF:
   - file: case-pic01.png
     width: 800
     height: 600
     tip: >
-      the precisely milled aluminum chunk, with untapped side-panel mount
+      The precisely milled aluminum chunk, with untapped side-panel mount
       holes and a random spot drill...
   - file: case-pic02.png
     width: 800
     height: 600
     tip: >
-      beginning to endmill out the interior of the case.
+      Beginning to endmill out the interior of the case.
   - file: case-pic03.png
     width: 800
     height: 600
     tip: >
-      halfway done milling out the inside! it's already starting to look
+      Halfway done milling out the inside! Its already starting to look
       like the final product!
   - file: case-pic04.png
     width: 800
     height: 600
     tip: >
-      the rough cut final case, showing how the #10-24 flat socket screws
+      The rough cut final case, showing how the #10-24 flat socket screws
       enter.
   - file: case-pic05.png
     width: 800
     height: 600
     tip: >
-      the case after a polish treatment. oooooh shiny!!!
+      The case after a polish treatment. Oooooh shiny!!!
   - file: case-pic06.png
     width: 800
     height: 600
     tip: >
-      the case and roughly cut red oak sides, yet to be sanded.
+      The case and roughly cut red oak sides, yet to be sanded.
   - file: case-pic07.png
     width: 800
     height: 600
     tip: >
-      a picture of the sanding setup. this stage took for-EVER!
+      A picture of the sanding setup. This stage took for-EVER!
   - file: case-pic08.png
     width: 800
     height: 600
     tip: >
-      both wood panels ready to be milled, showing their orientation on the
+      Both wood panels ready to be milled, showing their orientation on the
       case.
   - file: case-pic09.png
     width: 800
     height: 600
     tip: >
-      mounted, milled wood side panels.
+      Mounted, milled wood side panels.
   - file: case-pic10.png
     width: 800
     height: 600
     tip: >
-      the panels after two coats of minwax cherry stain.
+      The panels after two coats of minwax cherry stain.
   - file: case-pic11.png
     width: 800
     height: 600
     tip: >
-      the essentially finished case, looking handsome if i do say so myself.
+      The essentially finished case, looking handsome if I do say so myself.
   - file: case-pic12.png
     width: 800
     height: 600
     tip: >
-      the side panels, with a bit of room milled out for safe measure...
+      The side panels, with a bit of room milled out for safe measure...
 imagesG:
   - file: psu-pic01.png
     width: 800
     height: 600
     tip: >
-      the TO-3 mounting segment, showing how the two pins exit the mount
-      through nylon insulating rings. the two case-mounting screws are
-      similarly insulated using rings and washers. that way neither the top
+      The TO-3 mounting segment, showing how the two pins exit the mount
+      through nylon insulating rings. The two case-mounting screws are
+      similarly insulated using rings and washers. That way neither the top
       nor bottom of the case are at any dangerous voltage.
   - file: psu-pic02.png
     width: 800
     height: 600
     tip: >
-      all aluminum parts milled and the wood panels are getting there. you
-      can see the LM350K mounts beautifully on its aluminum segment. thank
+      Tll aluminum parts milled and the wood panels are getting there. You
+      can see the LM350K mounts beautifully on its aluminum segment. Thank
       God for those datasheets!
   - file: psu-pic03.png
     width: 800
     height: 600
     tip: >
-      this pic shows what a large effect wet sanding with just 600-grit
+      This pic shows what a large effect wet sanding with just 600-grit
       sandpaper can have on aluminum.
   - file: psu-pic04.png
     width: 800
     height: 600
     tip: >
-      a test of the integrated amber switch LED. a lesson for the kids out
+      A test of the integrated amber switch LED. A lesson for the kids out
       there: when in doubt, try 20mA. :P
   - file: psu-pic05.png
     width: 800
     height: 600
     tip: >
-      starting on the power cable that is to connect the power supply to the
-      amplifier. the wires are solid 18-gauge copper, and will be enclosed
+      Starting on the power cable that is to connect the power supply to the
+      amplifier. The wires are solid 18-gauge copper, and will be enclosed
       in a shroud of heat shrink tubing.
   - file: psu-pic06.png
     width: 800
     height: 600
     tip: >
-      a pic showing how the toroidal transformer mounts to the bottom panel.
-      the milled hole for the mounting bolt is cut in such a way as to limit
+      A pic showing how the toroidal transformer mounts to the bottom panel.
+      The milled hole for the mounting bolt is cut in such a way as to limit
       its rotation, meaning only one tool (for the nut) is required to
       fasten the toroid. (also note the newly drilled and cut second
       revision boards.)
@@ -245,25 +245,25 @@ imagesG:
     width: 800
     height: 600
     tip: >
-      it lives! i'm getting 14.68V<sub>dc</sub> after regulation with only
+      It lives! i'm getting 14.68V<sub>dc</sub> after regulation with only
       2.5mV of 120Hz ripple, which is within normal limits.
   - file: psu-pic08.png
     width: 800
     height: 600
     tip: >
-      an idea of what the side red-oak panels are supposed to look like. i
+      An idea of what the side red-oak panels are supposed to look like. I
       had to learn the hard way that cutting toolspeed is important, as you
       can see from the shrapnelized back-panel...
   - file: psu-pic09.png
     width: 800
     height: 600
     tip: >
-      the supply is starting to come together here, somewhat.
+      The supply is starting to come together here, somewhat.
   - file: psu-pic10.png
     width: 800
     height: 600
     tip: >
-      my first completed audio power supply, looking nice and shiny!
+      My first completed audio power supply, looking nice and shiny!
 partsA:
   - part: 4672K-ND
     vendor: digikey
