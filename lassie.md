@@ -245,7 +245,7 @@ imagesG:
     width: 800
     height: 600
     tip: >
-      It lives! i'm getting 14.68V<sub>dc</sub> after regulation with only
+      It lives! I am getting 14.68V<sub>dc</sub> after regulation with only
       2.5mV of 120Hz ripple, which is within normal limits.
   - file: psu-pic08.png
     width: 800
