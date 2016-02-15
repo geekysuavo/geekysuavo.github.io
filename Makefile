@@ -9,6 +9,9 @@ EQ+= bezier/01
 
 EQ+= ppm/01 ppm/02
 
+EQ+= camera/01 camera/02 camera/03
+EQ+= camera/04 camera/05 camera/06
+
 EQ+= nusutils/01
 
 PNG=$(addsuffix .png,$(EQ))

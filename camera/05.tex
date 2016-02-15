@@ -1,0 +1,12 @@
+\documentclass[border=2pt,varwidth]{standalone}
+\usepackage{standalone}
+\usepackage{amsmath}
+\begin{document}
+\[
+ \mathbf{y}_t = \underset{\mathbf{x}\in\mathcal{Q}}{\text{argmin}} \left\{
+  \frac{L}{2} \| \mathbf{x} - \mathbf{x}_{t-1} \|_2^2 +
+  \langle \nabla \hat{f} (\mathbf{x}_{t-1}),
+          \mathbf{x} - \mathbf{x}_{t-1} \rangle
+ \right\}
+\]
+\end{document}
