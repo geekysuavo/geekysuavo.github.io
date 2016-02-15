@@ -9,8 +9,8 @@ EQ+= bezier/01
 
 EQ+= ppm/01 ppm/02
 
-EQ+= camera/01 camera/02 camera/03
-EQ+= camera/04 camera/05 camera/06
+EQ+= camera/01 camera/02 camera/03 camera/04
+EQ+= camera/05 camera/06 camera/07
 
 EQ+= nusutils/01
 

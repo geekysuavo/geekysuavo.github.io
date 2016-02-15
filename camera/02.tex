@@ -1,8 +1,12 @@
 \documentclass[border=2pt,varwidth]{standalone}
 \usepackage{standalone}
 \usepackage{amsmath}
+\usepackage{amsfonts}
 \begin{document}
 \[
-  f(\mathbf{X}) \equiv -\sum_{i=1}^N S(\mathbf{X}_i)
+ \mathcal{Q} \equiv \left\{
+  \mathbf{x} \in \mathbb{H}^n \mid
+  \| \mathbf{b} - \mathbf{K} \mathbf{W} \mathbf{x} \|_2 \le \varepsilon
+ \right\}
 \]
 \end{document}

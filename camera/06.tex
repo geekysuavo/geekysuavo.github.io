@@ -3,7 +3,10 @@
 \usepackage{amsmath}
 \begin{document}
 \[
- \mathbf{x}_t = \mathbf{y}_t + \left( \frac{t-1}{t+2} \right)
-  \left( \mathbf{y}_t - \mathbf{y}_{t-1} \right)
+ \mathbf{y}_t = \underset{\mathbf{x}\in\mathcal{Q}}{\text{argmin}} \left\{
+  \frac{L}{2} \| \mathbf{x} - \mathbf{x}_{t-1} \|_2^2 +
+  \langle \nabla \hat{f} (\mathbf{x}_{t-1}),
+          \mathbf{x} - \mathbf{x}_{t-1} \rangle
+ \right\}
 \]
 \end{document}
