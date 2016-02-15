@@ -15,7 +15,32 @@ images:
 
 # Introduction
 
-FIXME
+Maximum Entropy, or MaxEnt, is a method commonly used to reconstruct
+nonuniformly sparsely sampled data in [Nuclear Magnetic Resonance](
+https://en.wikipedia.org/wiki/Nuclear_magnetic_resonance) (NMR)
+spectroscopy. MaxEnt uses the [principle of maximum entropy](
+https://en.wikipedia.org/wiki/Principle_of_maximum_entropy) to guide
+reconstruction: it finds the least informative spectrum that agrees
+with the sparse measured data.
+
+Prior to this work, MaxEnt reconstruction was performed using
+techniques originally introduced by [Skilling and Bryan](
+https://dx.doi.org/10.1093/mnras/211.1.111) in 1984 and transferred into
+NMR by [Hoch, Stern and colleagues](http://rnmrtk.uchc.edu/) over the
+years. However, these techniques did not fully exploit the convexity
+and smoothness of the entropy [regularization functional](
+https://en.wikipedia.org/wiki/Regularization_%28mathematics%29),
+and converged to their solutions rather slowly, at least compared
+to the theoretically optimum convergence rates.
+
+The Convex Accelerated Maximum Entropy Reconstruction Algorithm, or CAMERA,
+is a new MaxEnt reconstruction algorithm for NMR that fully exploits the
+curvature and convexity of the entropy functional to converge rapidly to
+MaxEnt solutions. CAMERA is faster than previous methods of MaxEnt
+reconstruction, and integrates easily into [nmrPipe](
+http://spin.niddk.nih.gov/NMRPipe/) processing scripts. So if you're
+reconstructing on-grid NUS NMR datasets, you should seriously be using
+CAMERA. **;)**
 
 # The mathematics
 
@@ -50,14 +75,23 @@ time-domain gradient of the entropy functional at iteration _t_:
 
 In the above equation, **F** represents the inverse discrete Fourier transform
 and asterisks denote hypercomplex conjugate transposition. The local gradient
-information is then used in a constrained projected gradient mapping step to
-compute a new **y** iterate,
+information is then used in a projected gradient mapping step to compute a
+new **y** iterate,
 
 {% include equation.html id="06" %}
 
-FIXME
+where _L_ is an estimate of the local Lipschitz constant of _f_ at **x**.
+The acceleration of CAMERA rests in the final equation for computing the
+next **x** iterate:
 
 {% include equation.html id="07" %}
+
+which is essentially a way of introducing momentum from previous iterates
+into the trajectory of **x** as it descends to the local minimizer of _-f_.
+
+**TL;DR:** CAMERA is fast and lightweight. It averages two FFTs per iteration,
+converges in 100-500 iterations, and only requires six _N_-element arrays per
+reconstruction task.
 
 # Performance analyses
 
