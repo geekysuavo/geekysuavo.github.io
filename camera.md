@@ -46,7 +46,7 @@ CAMERA. **;)**
 
 CAMERA utilizes accelerated convex optimization techniques developed by
 [Yurii Nesterov](https://scholar.google.com/citations?user=DJ8Ep8YAAAAJ)
-for solving smooth convex functions under convex constraints. Formally
+for minimizing smooth convex functions under convex constraints. Formally
 stated, CAMERA solves:
 
 {% include equation.html id="01" %}
@@ -87,7 +87,7 @@ next **x** iterate:
 {% include equation.html id="07" %}
 
 which is essentially a way of introducing momentum from previous iterates
-into the trajectory of **x** as it descends to the local minimizer of _-f_.
+into the trajectory of **x** as it ascends to the global maximizer of _f_.
 
 **TL;DR:** CAMERA is fast and lightweight. It averages two FFTs per iteration,
 converges in 100-500 iterations, and only requires six _N_-element arrays per
