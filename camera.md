@@ -7,44 +7,44 @@ layout: project
 bar: top
 images:
   - file: conv-wrt-ffm.png
-    width: 100
-    height: 100
+    width: 800
+    height: 571
     tip: >
       Convergence of CAMERA, with and without line-search (L.S.), compared
       to the existing Fast Forward MaxEnt (FFM) algorithm.
   - file: conv-wrt-rnmrtk.png
-    width: 100
-    height: 100
+    width: 800
+    height: 571
     tip: >
       Convergence of line-search CAMERA compared to the Cambridge MaxEnt
       algorithm employed in the Rowland NMR Toolkit.
   - file: deltas.png
-    width: 100
-    height: 100
+    width: 800
+    height: 571
     tip: >
       Convergence of constant-aim CAMERA (without line search) as a function
       of various constant regularization functional curvature values.
   - file: lambdas.png
-    width: 100
-    height: 100
+    width: 800
+    height: 571
     tip: >
       Convergence of constant-lambda CAMERA (without line search) as a
       function of various constant Lagrange multipliers.
   - file: hsqc.png
-    width: 100
-    height: 100
+    width: 800
+    height: 271
     tip: >
       CAMERA-reconstructed proton-nitrogen HSQC dataset of double-labeled
       ubiquitin.
   - file: hnco.png
-    width: 100
-    height: 100
+    width: 701
+    height: 600
     tip: >
       Projection of a CAMERA-reconstructed HNCO dataset along the proton
       spectral dimension.
   - file: decoup.png
-    width: 100
-    height: 100
+    width: 800
+    height: 271
     tip: >
       Analysis of CAMERA deconvolution performance of a doublet having
       a known J-coupling constant.
@@ -132,7 +132,9 @@ reconstruction task.
 
 # Performance analyses
 
-FIXME
+These images recap the fairly detailed performance demonstrations performed
+for the 2016 _J. Magn. Reson._ paper, and highlight reconstruction results
+on two example NUS datasets.
 
 {% include gallery.html dir="camera" images=page.images %}
 
