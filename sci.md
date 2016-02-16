@@ -4,6 +4,13 @@ heading: My research projects
 layout: listing
 bar: top
 projects:
+  - link: camera
+    caption: Convex Accelerated MaxEnt Reconstruction Algorithm
+    content: >
+      CAMERA is a new method for rapidly reconstructing NUS NMR data
+      according to the statistical principle of maximum entropy. Using
+      accelerated techniques for optimizing smooth convex functions,
+      CAMERA converges to MaxEnt solutions faster than prior methods.
   - link: nusutils
     caption: Seed-independent nonuniform sampling
     content: >
