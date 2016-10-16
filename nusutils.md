@@ -95,4 +95,5 @@ equation interpretation. They're hosted on GitHub:
 
  * [GitHub repository](http://github.com/geekysuavo/nusutils)
  * [Paper on gap sampling]({{site.db}}nusutils/bworley-2015.pdf)
+ * [Paper on density sampling]({{site.db}}nusutils/bworley-2016.pdf)
 
