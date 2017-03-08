@@ -86,8 +86,6 @@ CAMERA utilizes accelerated convex optimization techniques developed by
 for minimizing smooth convex functions under convex constraints. Formally
 stated, CAMERA solves:
 
-{% include equation.html id="01" %}
-
 $$
 \mathbf{\hat{x}} =
  \underset{\mathbf{x} \in \mathcal{Q}}{\text{argmax}}
@@ -98,10 +96,16 @@ where $\mathcal{Q}$ represents the set of all feasible solutions:
 
 {% include equation.html id="02" %}
 
+$$
+\mathcal{Q} \equiv \left\{
+ \mathbf{x} \in \mathbb{H}^n :
+ \| \mathbf{b} - \mathbf{K} \mathbf{W} \mathbf{x} \|_{\ell_2}
+ \le \varepsilon
+\right\}
+$$
+
 The entropy functional $f$ is computed by summation of the entropies of all
 frequency-domain estimates,
-
-{% include equation.html id="03" %}
 
 $$f(\mathbf{X}) \equiv \sum_{i=1}^N S(\mathbf{X}_i)$$
 
@@ -109,33 +113,66 @@ where $S$ represents the Hoch-Hore entropy functional,
 
 {% include equation.html id="04" %}
 
+$$
+S(z) \equiv
+ -|z| \log \left(
+  \frac{|z|}{2 \delta} + \sqrt{
+   1 + \frac{|z|^2}{4 \delta^2}
+  }
+ \right) + \sqrt{
+  |z|^2 + 4 \delta^2
+ }
+$$
+
 which is a smooth convex function over the hypercomplex vector space of
 frequency-domain estimates, and has a known [Lipschitz constant](
 https://en.wikipedia.org/wiki/Lipschitz_continuity). Part of the efficiency
 of CAMERA revolves around its use of the [fast Fourier transform](
 https://en.wikipedia.org/wiki/Fast_Fourier_transform) to compute the
-time-domain gradient of the entropy functional at iteration _t_:
+time-domain gradient of the entropy functional at iteration $t$:
 
 {% include equation.html id="05" %}
 
-In the above equation, **F** represents the inverse discrete Fourier transform
-and asterisks denote hypercomplex conjugate transposition. The local gradient
-information is then used in a projected gradient mapping step to compute a
-new **y** iterate,
+$$
+\nabla \hat{f}(\mathbf{x}_{t-1}) =
+ -\mathbf{F} \nabla f(\mathbf{F}^\ast \mathbf{x}_{t-1})
+$$
+
+In the above equation, $\mathbf{F}$ represents the inverse discrete Fourier
+transform and asterisks denote hypercomplex conjugate transposition. The
+local gradient information is then used in a projected gradient mapping
+step to compute a new $\mathbf{y}$ iterate,
 
 {% include equation.html id="06" %}
 
-where _L_ is an estimate of the local Lipschitz constant of _f_ at **x**.
-The acceleration of CAMERA rests in the final equation for computing the
-next **x** iterate:
+$$
+\mathbf{y}_t = \underset{\mathbf{x} \in \mathcal{Q}}{\text{argmin}}
+ \; \left\{
+  \frac{L}{2} \| \mathbf{x} - \mathbf{x}_{t-1} \| + \left\langle
+   \nabla \hat{f}(\mathbf{x}_{t-1}), \mathbf{x} - \mathbf{x}_{t-1}
+  \right\rangle
+ \right\}
+$$
+
+where $L$ is an estimate of the local Lipschitz constant of $f$ at the
+iterate $\mathbf{x}$. The acceleration of CAMERA rests in the final
+equation for computing the next $\mathbf{x}$ iterate:
 
 {% include equation.html id="07" %}
 
+$$
+\mathbf{x}_t = \mathbf{y}_t +
+ \frac{t - 1}{t + 2} \left(
+  \mathbf{y}_t - \mathbf{y}_{t-1}
+ \right)
+$$
+
 which is essentially a way of introducing momentum from previous iterates
-into the trajectory of **x** as it ascends to the global maximizer of _f_.
+into the trajectory of $\mathbf{x}$ as it ascends to the global maximizer of
+$f$.
 
 **TL;DR:** CAMERA is fast and lightweight. It averages two FFTs per iteration,
-converges in 100-500 iterations, and only requires six _N_-element arrays per
+converges in 100-500 iterations, and only requires six $N$-element arrays per
 reconstruction task.
 
 # Performance analyses
