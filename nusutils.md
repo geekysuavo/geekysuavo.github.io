@@ -43,7 +43,9 @@ data point in the current trace by a simple recurrence relation:
 
 {% include equation.html id="01" %}
 
-where _g(x<sub>i</sub>)_ is referred to as a 'gap equation'. Multidimensional
+$$x_{i+1} = x_i + \lfloor g(x_i) \rfloor + 1$$
+
+where $g(x_i)$ is referred to as a 'gap equation'. Multidimensional
 gap sampling schedules are built up recursively from lower-dimensional
 sub-schedules according to the above relation. The popular Poisson-gap
 method obeys a stochastic gap equation by drawing from a Poisson

@@ -382,8 +382,8 @@ Labs](http://www.gellerlabs.com).** Thanks Joe!
 
 Without going into a good amount of quantum mechanics, the idea behind
 proton NMR is this: a proton (hydrogen nucleus), when placed in a static
-magnetic field (_**B**<sub>0</sub>_), will be polarized by that field. If a
-stronger static magnetic field (_**B**<sub>1</sub>_) is applied orthogonally
+magnetic field ($\mathbf{B}_0$), will be polarized by that field. If a
+stronger static magnetic field ($\mathbf{B}_1$) is applied orthogonally
 to the first field, the protons will essentially be re-polarized by the
 stronger field, much the way a compass needle points to magnetic north. If
 the stronger field is then turned off [sufficiently
@@ -391,22 +391,36 @@ quickly](http://en.wikipedia.org/wiki/Adiabatic_theorem), the proton will
 begin to [precess](http://en.wikipedia.org/wiki/Larmor_precession) about the
 original field at its characteristic frequency:
 
-{% include equation.html id="01" %}
+$$\omega = -\gamma \| \mathbf{B}_0 \|$$
 
 In the above equation, gamma is called the gyromagnetic ratio, which is a
 scale factor that simply relates field strength to precession frequency. The
 entire process is described a bit more completely by the phenomenological
 [Bloch equations](http://en.wikipedia.org/wiki/Bloch_equations):
 
-{% include equation.html id="02" %}
+$$
+\begin{pmatrix}
+ \frac{d M_x(t)}{dt} \\
+ \frac{d M_y(t)}{dt} \\
+ \frac{d M_z(t)}{dt}
+\end{pmatrix} =
+ \gamma \left(
+  \mathbf{M}(t) \cross \mathbf{B}(t)
+ \right) -
+\begin{pmatrix}
+ \frac{M_x(t)}{T_2} \\
+ \frac{M_y(t)}{T_2} \\
+ \frac{M_z(t) - M_{eq}}{T_1}
+\end{pmatrix}
+$$
 
 # The engineering
 
 Solution of the Bloch equations for the [Earth's field](
 http://en.wikipedia.org/wiki/Earths_magnetic_field)
-along _z_ and the polarizing field along _x_ yields a situation in which the
+along $z$ and the polarizing field along $x$ yields a situation in which the
 same solenoid used to generated the polarizing field may be utilized to
-detect the precession signal as it swings through the _xy_ plane. Thus, a
+detect the precession signal as it swings through the $xy$ plane. Thus, a
 properly constructed solenoid that holds at least 500 mL of water and sits
 at a right angle to the local field vector should be capable of both
 polarizing and detecting the sample protons.

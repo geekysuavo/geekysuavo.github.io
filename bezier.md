@@ -48,11 +48,17 @@ called **belize**.
 # Mathematics
 
 A Bezier function is generated as the following parametric equation, where
-_P<sub>i</sub>_ represents the cartesian coordinate of the
-_i_-th control point. The number of points _N_ determines how
-many steps are made by the parameter, _t_.
+$P_i$ represents the cartesian coordinate of the
+$i$-th control point. The number of points $N$ determines how
+many steps are made by the parameter, $t$.
 
 {% include equation.html id="01" %}
+
+$$
+\mathbf{B}(t) = \sum_{i=0}^n \left( \underset{i}{n} \right)
+ \mathbf{P}_i (1-t)^{n-i} t^i
+ \quad t \in [ 0, 1 ].
+$$
 
 # Source code
 
