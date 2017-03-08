@@ -88,6 +88,8 @@ stated, CAMERA solves:
 
 {% include equation.html id="01" %}
 
+$$x = \xi$$
+
 where _Q_ represents the set of all feasible solutions:
 
 {% include equation.html id="02" %}
