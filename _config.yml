@@ -6,6 +6,7 @@ email: geekysuavo@gmail.com
 baseurl: ""
 url: "http://geekysuavo.github.io"
 db: "https://dl.dropboxusercontent.com/u/49207495/website/"
+mj: "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"
 github_username:  geekysuavo
 
 # build settings
