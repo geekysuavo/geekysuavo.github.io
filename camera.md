@@ -88,18 +88,24 @@ stated, CAMERA solves:
 
 {% include equation.html id="01" %}
 
-$$x = \xi$$
+$$
+\mathbf{\hat{x}} =
+ \underset{\mathbf{x} \in \mathcal{Q}}{\text{argmax}}
+ \; f(\mathbf{F}^\ast \mathbf{x})
+$$
 
-where _Q_ represents the set of all feasible solutions:
+where $\mathcal{Q}$ represents the set of all feasible solutions:
 
 {% include equation.html id="02" %}
 
-The entropy functional _f_ is computed by summation of the entropies of all
+The entropy functional $f$ is computed by summation of the entropies of all
 frequency-domain estimates,
 
 {% include equation.html id="03" %}
 
-where _S_ represents the Hoch-Hore entropy functional,
+$$f(\mathbf{X}) \equiv \sum_{i=1}^N S(\mathbf{X}_i)$$
+
+where $S$ represents the Hoch-Hore entropy functional,
 
 {% include equation.html id="04" %}
 
