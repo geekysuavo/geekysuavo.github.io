@@ -94,8 +94,6 @@ $$
 
 where $\mathcal{Q}$ represents the set of all feasible solutions:
 
-{% include equation.html id="02" %}
-
 $$
 \mathcal{Q} \equiv \left\{
  \mathbf{x} \in \mathbb{H}^n :
@@ -110,8 +108,6 @@ frequency-domain estimates,
 $$f(\mathbf{X}) \equiv \sum_{i=1}^N S(\mathbf{X}_i)$$
 
 where $S$ represents the Hoch-Hore entropy functional,
-
-{% include equation.html id="04" %}
 
 $$
 S(z) \equiv
@@ -131,8 +127,6 @@ of CAMERA revolves around its use of the [fast Fourier transform](
 https://en.wikipedia.org/wiki/Fast_Fourier_transform) to compute the
 time-domain gradient of the entropy functional at iteration $t$:
 
-{% include equation.html id="05" %}
-
 $$
 \nabla \hat{f}(\mathbf{x}_{t-1}) =
  -\mathbf{F} \nabla f(\mathbf{F}^\ast \mathbf{x}_{t-1})
@@ -143,12 +137,11 @@ transform and asterisks denote hypercomplex conjugate transposition. The
 local gradient information is then used in a projected gradient mapping
 step to compute a new $\mathbf{y}$ iterate,
 
-{% include equation.html id="06" %}
-
 $$
 \mathbf{y}_t = \underset{\mathbf{x} \in \mathcal{Q}}{\text{argmin}}
- \; \left\{
-  \frac{L}{2} \| \mathbf{x} - \mathbf{x}_{t-1} \| + \left\langle
+ \left\{
+  \frac{L}{2} \| \mathbf{x} - \mathbf{x}_{t-1} \|_{\ell_2}^2 +
+ \left\langle
    \nabla \hat{f}(\mathbf{x}_{t-1}), \mathbf{x} - \mathbf{x}_{t-1}
   \right\rangle
  \right\}
@@ -158,11 +151,9 @@ where $L$ is an estimate of the local Lipschitz constant of $f$ at the
 iterate $\mathbf{x}$. The acceleration of CAMERA rests in the final
 equation for computing the next $\mathbf{x}$ iterate:
 
-{% include equation.html id="07" %}
-
 $$
 \mathbf{x}_t = \mathbf{y}_t +
- \frac{t - 1}{t + 2} \left(
+ \left( \frac{t - 1}{t + 2} \right) \left(
   \mathbf{y}_t - \mathbf{y}_{t-1}
  \right)
 $$
