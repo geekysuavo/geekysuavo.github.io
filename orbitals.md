@@ -21,14 +21,10 @@ reasons.
 The wavefunction of the bound electron in a hydrogen atom may be obtained by
 separation of variables in a spherical polar coordinate system, like so:
 
-{% include equation.html id="01" %}
-
 $$\psi(r,\theta,\phi) = R(r) \Theta(\theta) \Phi(\phi)$$
 
 More specifically, for the energy and angular momentum quantum numbers
 $n$, $l$ and $m$, the wavefunction has the form:
-
-{% include equation.html id="02" %}
 
 $$
 \psi_{nlm}(r,\theta,\phi) =
@@ -39,8 +35,6 @@ $$
 
 where the normalization factor equals:
 
-{% include equation.html id="03" %}
-
 $$
 N_{nl}(\rho) =
  \sqrt{\left( \frac{\rho}{r} \right)^3 \frac{(n-l-1)!}{2n(n+l)!}}
@@ -49,8 +43,6 @@ N_{nl}(\rho) =
 $$
 
 The next term equals the generalized Laguerre polynomial:
-
-{% include equation.html id="04" %}
 
 $$
 L_{p}^{\alpha} \left( \rho \right) =
@@ -63,8 +55,6 @@ $$
 
 And the final term equals the spherical harmonic equation:
 
-{% include equation.html id="05" %}
-
 $$
 Y_l^m(\theta,\phi) =
  (-1)^m \sqrt{\frac{(2l+1)}{4 \pi} \frac{(l-m)!}{(l+m)!}}
@@ -74,8 +64,6 @@ $$
 
 Finally, the term in the spherical harmonic equation represents the
 associated Legendre polynomial:
-
-{% include equation.html id="06" %}
 
 $$
 P_l^m(\cos \theta) =
