@@ -46,31 +46,89 @@ simple task, requiring the use of the Biot-Savart equation:
 
 {% include equation.html id="01" %}
 
+$$
+\mathbf{B}(\mathbf{r}) = \frac{\mu_0}{4 \pi}
+ \int_C i \frac{d\mathbf{l} \times \mathbf{r}}{|\mathbf{r}|^3}
+$$
+
 Without too much headache, any three-dimensional curve may be approximated
 by line segments, and the magnetic field at any point may be computed using
 a few vector operations! **:)**
 
-For every line segment, the angles between the wire ends (**A** and **B**)
-and the computation point (**r**) are calculated:
+For every line segment, the angles between the wire ends ($\mathbf{A}$ and
+$\mathbf{B}$) and the computation point ($\mathbf{r}$) are calculated:
 
 {% include equation.html id="02" %}
 {% include equation.html id="03" %}
+
+$$
+\cos \theta_{1,k} =
+ \frac{\mathbf{B}_k - \mathbf{A}_k}
+      {\left| \mathbf{B}_k - \mathbf{A}_k \right|}
+ \cdot
+ \frac{\mathbf{r} - \mathbf{A}_k}
+      {\left| \mathbf{r} - \mathbf{A}_k \right|}
+$$
+
+$$
+\cos \theta_{2,k} =
+ \frac{\mathbf{B}_k - \mathbf{A}_k}
+      {\left| \mathbf{B}_k - \mathbf{A}_k \right|}
+ \cdot
+ \frac{\mathbf{r} - \mathbf{B}_k}
+      {\left| \mathbf{r} - \mathbf{B}_k \right|}
+$$
 
 Then the magnetic field unit vector is calculated:
 
 {% include equation.html id="04" %}
 
+$$
+\hat{\mathbf{f}}_k =
+ \frac{\mathbf{B}_k - \mathbf{A}_k}
+      {\left| \mathbf{B}_k - \mathbf{A}_k \right|}
+ \times
+ \frac{\mathbf{v}_k}{\left| \mathbf{v}_k \right|}
+$$
+
 where...
 
 {% include equation.html id="05" %}
 
-The final magnetic field at **r** is then as follows:
+$$
+\mathbf{v}_k =
+ \left( \mathbf{r} - \mathbf{A}_k \right) -
+ \left[
+  \left( \mathbf{r} - \mathbf{A}_k \right)
+  \cdot
+  \frac{\mathbf{B}_k - \mathbf{A}_k}
+       {\left| \mathbf{B}_k - \mathbf{A}_k \right|}
+ \right]
+ \frac{\mathbf{B}_k - \mathbf{A}_k}
+      {\left| \mathbf{B}_k - \mathbf{A}_k \right|}
+$$
+
+The final magnetic field at $\mathbf{r}$ is then as follows:
 
 {% include equation.html id="06" %}
 
-Where **A** and **B** are the starting and ending points of each line
-segment, **r** is the point at which the field is to be computed, and
-**v** is the perpendicular vector from **r** to **AB**.
+$$
+\mathbf{f}(\mathbf{r}) =
+ \frac{\mu_0}{4\pi}
+ \sum_{k=1}^K
+ \left[
+  \frac{i_k}{\left | \mathbf{v}_k \right |}
+  \left(
+   \cos \theta_{1,k} - \cos \theta_{2,k}
+  \right)
+  \hat{\mathbf{f}}_k
+ \right]
+$$
+
+Where $\mathbf{A}$ and $\mathbf{B}$ are the starting and ending points
+of each line segment, $\mathbf{r}$ is the point at which the field is
+to be computed, and $\mathbf{v}$ is the perpendicular vector from
+$\mathbf{r}$ to the segment $\mathbf{AB}$.
 
 Whew! Now wasn't that simple?
 
