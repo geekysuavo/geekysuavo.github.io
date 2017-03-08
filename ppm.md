@@ -405,7 +405,7 @@ $$
  \frac{d M_z(t)}{dt}
 \end{pmatrix} =
  \gamma \left(
-  \mathbf{M}(t) \cross \mathbf{B}(t)
+  \mathbf{M}(t) \times \mathbf{B}(t)
  \right) -
 \begin{pmatrix}
  \frac{M_x(t)}{T_2} \\

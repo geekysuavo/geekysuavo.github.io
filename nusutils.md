@@ -41,8 +41,6 @@ a highly general multidimensional gap sampling framework. Under gap
 sampling, each sampled data point is determined from the previously sampled
 data point in the current trace by a simple recurrence relation:
 
-{% include equation.html id="01" %}
-
 $$x_{i+1} = x_i + \lfloor g(x_i) \rfloor + 1$$
 
 where $g(x_i)$ is referred to as a 'gap equation'. Multidimensional

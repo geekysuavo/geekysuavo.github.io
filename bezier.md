@@ -52,10 +52,8 @@ $P_i$ represents the cartesian coordinate of the
 $i$-th control point. The number of points $N$ determines how
 many steps are made by the parameter, $t$.
 
-{% include equation.html id="01" %}
-
 $$
-\mathbf{B}(t) = \sum_{i=0}^n \left( \underset{i}{n} \right)
+\mathbf{B}(t) = \sum_{i=0}^n { n \choose i }
  \mathbf{P}_i (1-t)^{n-i} t^i
  \quad t \in [ 0, 1 ].
 $$
