@@ -1,4 +1,4 @@
-      <a href="{% if include.link %}{% if include.base == "url" %}{{ site.url }}/{% elsif include.base == "db" %}{{ site.db }}{% endif %}{{ include.link }}{% else %}#top{% endif %}">
+      <a href="{% if include.link %}{% if include.base == "url" %}{{ site.url }}/{% elsif include.base == "db" %}{{ site.db }}{% elsif include.base == "vita" %}{{ site.vita }}{% endif %}{{ include.link }}{% else %}#top{% endif %}">
         <div class="topbox {{ include.type }} {{ include.color }}">
           {% if include.type == "rect" %}
           <font class="topname">Bradley Worley</font>

@@ -177,7 +177,7 @@ div.topbox.square {
 }
 
 div.topbox.upsquare {
-  background-image: url('/res/images/up-arrow.png');
+  background-image: url('https://github.com/geekysuavo/geekysuavo.github.io/raw/master/res/images/up-arrow.png');
   position: absolute;
   margin-right: 5px;
   height: 38px;
@@ -338,7 +338,7 @@ p.bottomurl {
 
 #titlegraphic {
   background-color: rgb(200,200,200);
-  background-image: url('/res/images/wood.png');
+  background-image: url('https://github.com/geekysuavo/geekysuavo.github.io/raw/master/res/images/wood.png');
   position: relative;
   margin-left: 5px;
   margin-top: 5px;

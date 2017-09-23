@@ -8,7 +8,7 @@ bar: top
 
 # Hi!
 
-<img src="res/images/me.png" class="mythumb" />
+<img src="{{ site.db }}/res/images/me.png" class="mythumb" />
 I'm Brad. I put together this website to document a few of the projects
 I consider to be (at least partially) successful or interesting. Some
 are very old, while others are new and even unfinished. But hopefully
