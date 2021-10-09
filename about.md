@@ -21,18 +21,22 @@ website focuses on the last three mentioned interests! **:P**
 
 # What I do
 
-I'm currently a Ph.D postdoctoral research fellow at the Pasteur Institute.
+I'm currently a senior scientist at [Atomwise](www.atomwise.com) in the
+**ml.research** group, spending 100% of my time on software engineering
+of our machine learning frameworks and the other 100% on research into
+new algorithms and architectures.
+
 Because of my long-standing interest in computer software and hardware, I
-have become both a researcher and a system administrator.
-[My research](sci.html) focuses on applied mathematics and computer science,
-specifically in modeling complex data of chemical mixtures, protein structure
-and dynamics, and multivariate statistical analysis. My sysadmin and
-programming work usually focuses around maintaining file, web and software
-servers for one or more research groups, _e.g._,
-[the Power's group website](http://bionmr.unl.edu). In the few free moments
-I get these days, I like to tinker with [electronics](hw.html), and when
-I just have to procrastinate at work, I write small pieces of
-[software](sw.html).
+am both a scientist and an engineer. My [research](sci.html) focuses on
+applied mathematics and computer science, specifically in modeling complex
+data of chemical mixtures, protein structure and dynamics, and multivariate
+directional statisticx. My engineering work has spanned system
+administration for [the Powers group](http://bionmr.unl.edu),
+project management of complex deep learning software suites,
+and execution of research project ideas. In the few free moments
+I get these days, I like to tinker with [electronics](hw.html),
+and when I just have to procrastinate on useful work,
+I write small pieces of [software](sw.html).
 
 Really, the relevant question is: what don't I do? **:)** If it's going to
 be a challenge, odds are that I'm game.
