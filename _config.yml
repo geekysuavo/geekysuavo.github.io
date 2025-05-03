@@ -4,7 +4,7 @@
 title: geekysuavo.github.io
 email: geekysuavo@gmail.com
 baseurl: ""
-url: "http://geekysuavo.github.io"
+url: "https://geekysuavo.github.io"
 vita: "https://github.com/geekysuavo/vita/raw/main/"
 db: "https://github.com/geekysuavo/geekysuavo.github.io/raw/master/"
 mj: "https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML-full"
